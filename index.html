@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>بالين بلو ميزون 2 · حي الصحافة، الرياض | Baleine Bleu Maison 2</title>
+<meta name="description" content="بالين بلو ميزون 2 — برج تجاري من 25 طابقاً على الشريط التجاري في حي الصحافة بالرياض، بمساحة قابلة للتأجير 14,365 م² و322 موقفاً وواجهة مباشرة على العصب المالي للعاصمة. التسويق الحصري عبر نفوذ للاستثمار العقاري. Baleine Bleu Maison 2 — a 25-floor commercial tower on the financial corridor in Al Sahafah, Riyadh." />
+<link rel="icon" href="assets/mark-navy.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Jost:wght@300;400;500;600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<style>
+/* ============ TOKENS ============ */
+:root{
+  --navy:#153487;
+  --navy-deep:#102863;
+  --navy-900:#0a1846;
+  --navy-800:#1e3f96;
+  --teal:#5b78d6;
+  --teal-soft:#9fb4ea;
+  --teal-2:#c3d0f4;
+  --gold:#c9a86a;
+  --gold-soft:#e2c891;
+  --stone:#93a3c8;
+  --stone-2:#aab7d6;
+  --cream:#eef2fb;
+  --cream-dim:#c6d0e8;
+  --ink:#0a1846;
+  --glass:rgba(255,255,255,.05);
+  --glass-2:rgba(255,255,255,.08);
+  --glass-brd:rgba(255,255,255,.13);
+  --glass-brd-2:rgba(255,255,255,.22);
+  --hair:rgba(255,255,255,.1);
+  --ease:cubic-bezier(.22,.61,.36,1);
+  --maxw:1280px;
+  --acc:var(--gold-soft);
+  --acc-2:var(--teal-soft);
+  --font-display:"Cairo",sans-serif;
+  --font-body:"Cairo",sans-serif;
+  /* themeable surfaces (dark defaults) */
+  --page-base:#0e2160;
+  --page-bg:
+    radial-gradient(1100px 820px at 84% -12%, rgba(91,120,214,.30), transparent 60%),
+    radial-gradient(900px 880px at -6% 104%, rgba(201,168,106,.12), transparent 60%),
+    radial-gradient(900px 700px at 50% 120%, rgba(10,24,70,.6), transparent 62%),
+    linear-gradient(180deg,#16307e,#0e2160 55%,#0a1748);
+  --btn-fill:#c9a86a; --btn-ink:#0b1746; --btn-fill-h:#d9bd83; --btn-glow:rgba(201,168,106,.5);
+  --footer-bg:rgba(8,20,58,.6);
+  --input-bg:rgba(255,255,255,.04); --input-bg-focus:rgba(255,255,255,.07);
+  --select-bg:#13285f;
+  --cm-bg:rgba(255,255,255,.03);
+  --modal-bg:linear-gradient(160deg,#1b378a,#102261);
+  --totop-bg:rgba(14,33,96,.82);
+  --cell-bg:rgba(255,255,255,.022); --cell-bg-h:rgba(255,255,255,.06);
+  --card-bg:rgba(255,255,255,.05); --card-brd:rgba(255,255,255,.13); --card-shadow:0 28px 64px -40px rgba(0,0,0,.85);
+  --track:rgba(255,255,255,.12);
+  --grain:.035;
+}
+/* ---- LIGHT THEME (cool paper + royal navy/gold) ---- */
+[data-theme="light"]{
+  --cream:#122a6e;
+  --cream-dim:#33477f;
+  --stone:#68789e;
+  --stone-2:#51628a;
+  --teal:#3550ad;
+  --teal-soft:#3550ad;
+  --teal-2:#26398a;
+  --gold:#9d7e40;
+  --acc:#9d7e40;
+  --acc-2:#3550ad;
+  --glass:rgba(255,255,255,.6);
+  --glass-2:rgba(255,255,255,.85);
+  --glass-brd:rgba(21,52,135,.14);
+  --glass-brd-2:rgba(21,52,135,.24);
+  --hair:rgba(21,52,135,.11);
+  --page-base:#eef2fb;
+  --page-bg:#eef2fb;
+  --btn-fill:#153487; --btn-ink:#eef2fb; --btn-fill-h:#1e46a8; --btn-glow:rgba(21,52,135,.32);
+  --footer-bg:rgba(21,52,135,.05);
+  --input-bg:rgba(21,52,135,.045); --input-bg-focus:rgba(21,52,135,.075);
+  --select-bg:#eef2fb;
+  --cm-bg:rgba(255,255,255,.6);
+  --modal-bg:linear-gradient(160deg,#fbfcff,#eef2fb);
+  --totop-bg:rgba(255,255,255,.88);
+  --cell-bg:rgba(255,255,255,.6); --cell-bg-h:rgba(255,255,255,.92);
+  --card-bg:rgba(255,255,255,.72); --card-brd:rgba(21,52,135,.1); --card-shadow:0 20px 50px -38px rgba(21,52,135,.32);
+  --track:rgba(21,52,135,.12);
+  --grain:.016;
+}
+/* keep nav, hero, mobile menu, loader & stat bands dark in BOTH themes */
+header, .hero, .m-menu, #loader, .exp-stats-band, .lm-band{
+  --cream:#eef2fb; --cream-dim:#c6d0e8; --stone:#93a3c8; --stone-2:#aab7d6;
+  --teal:#5b78d6; --teal-soft:#9fb4ea; --acc:#e2c891; --acc-2:#9fb4ea; --gold:#c9a86a;
+  --glass:rgba(255,255,255,.05); --glass-2:rgba(255,255,255,.08);
+  --glass-brd:rgba(255,255,255,.13); --glass-brd-2:rgba(255,255,255,.22);
+  --hair:rgba(255,255,255,.1);
+  --track:rgba(255,255,255,.14);
+}
+.lang-en{
+  --font-display:"Jost",sans-serif;
+  --font-body:"Outfit",sans-serif;
+}
+[data-theme="light"] .form-shell::before,
+[data-theme="light"] .modal-card::before{display:none}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--font-body);
+  background:var(--page-base);
+  color:var(--cream);
+  overflow-x:hidden;
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+  transition:background-color .5s var(--ease),color .5s var(--ease);
+}
+body.lock{overflow:hidden;height:100vh}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer}
+::selection{background:var(--teal);color:#fff}
+
+body::before{
+  content:"";position:fixed;inset:0;z-index:-2;
+  background:var(--page-bg);
+  transition:background .5s var(--ease);
+}
+body::after{
+  content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:var(--grain);
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* ============ BRAND MOTIFS ============ */
+.bloom{position:absolute;pointer-events:none;z-index:0;opacity:.08;
+  background:url("assets/mark-white.png") center/contain no-repeat}
+
+/* ============ TYPE HELPERS ============ */
+.eyebrow{
+  font-family:var(--font-body);
+  font-size:.74rem;font-weight:500;letter-spacing:.34em;text-transform:uppercase;
+  color:var(--acc);display:inline-flex;align-items:center;gap:.7em;
+}
+.lang-ar .eyebrow{letter-spacing:.12em;font-size:.9rem;font-weight:600}
+h1,h2,h3{font-family:var(--font-display);font-weight:500;line-height:1.14;letter-spacing:-.01em}
+.lang-ar h1,.lang-ar h2,.lang-ar h3{font-weight:700;line-height:1.34;letter-spacing:0}
+.display{font-size:clamp(2.5rem,4.6vw,4.05rem);line-height:1.08}
+.lang-ar .display{font-size:clamp(2.1rem,3.7vw,3.35rem);line-height:1.26}
+.h2{font-size:clamp(2rem,4.4vw,3.4rem)}
+.lang-ar .h2{font-size:clamp(1.8rem,3.7vw,2.9rem)}
+.lead{font-size:clamp(1.05rem,1.5vw,1.26rem);color:var(--cream-dim);font-weight:300;max-width:60ch}
+.lang-ar .lead{font-weight:400}
+.muted{color:var(--stone-2)}
+.num-lat{font-variant-numeric:lining-nums tabular-nums}
+
+/* ============ LAYOUT ============ */
+.wrap{max-width:var(--maxw);margin-inline:auto;padding-inline:clamp(1.2rem,4vw,3rem)}
+section{position:relative;padding-block:clamp(1.5rem,3vh,2.6rem);padding-inline:clamp(.8rem,3vw,1.8rem)}
+
+main > section:not(#hero) > .wrap{
+  position:relative;z-index:1;
+  max-width:1240px;margin-inline:auto;
+  padding:clamp(2.2rem,4.5vw,3.6rem) clamp(1.4rem,3.5vw,3rem);
+  background:var(--card-bg);border:1px solid var(--card-brd);border-radius:26px;
+  box-shadow:var(--card-shadow);transition:background .5s var(--ease),border-color .5s var(--ease)}
+.contact .form-shell{background:none;border:0;box-shadow:none;padding:0;backdrop-filter:none;-webkit-backdrop-filter:none}
+.contact .form-shell::before{display:none}
+.btn{
+  display:inline-flex;align-items:center;gap:.65em;
+  padding:1.05em 2.1em;border-radius:100px;font-size:.86rem;font-weight:500;
+  letter-spacing:.08em;text-transform:uppercase;border:1px solid transparent;
+  transition:.45s var(--ease);white-space:nowrap;
+}
+.lang-ar .btn{letter-spacing:0;text-transform:none;font-size:1rem;font-weight:500}
+.btn-primary{background:var(--btn-fill);color:var(--btn-ink)}
+.btn-primary:hover{background:var(--btn-fill-h);transform:translateY(-2px);box-shadow:0 18px 40px -18px var(--btn-glow)}
+.btn-ghost{border-color:var(--glass-brd-2);color:var(--cream);background:var(--glass)}
+.btn-ghost:hover{border-color:var(--cream);background:var(--glass-2)}
+.btn .arr{transition:transform .45s var(--ease)}
+[dir=rtl] .btn .arr{transform:scaleX(-1)}
+.btn:hover .arr{transform:translateX(4px)}
+[dir=rtl] .btn:hover .arr{transform:scaleX(-1) translateX(4px)}
+
+/* ============ LOADER ============ */
+#loader{
+  position:fixed;inset:0;z-index:1000;display:grid;place-items:center;overflow:hidden;
+  background:var(--navy);
+  transition:opacity 1s var(--ease),visibility 1s var(--ease);
+}
+#loader.done{opacity:0;visibility:hidden}
+#loader .bloom{inset:auto -12% -22% auto;width:64vmin;height:64vmin;opacity:.1}
+.loader-inner{position:relative;z-index:2;text-align:center;display:flex;flex-direction:column;align-items:center;gap:1.6rem}
+.loader-inner img{width:min(340px,70vw);opacity:0;transform:translateY(14px);animation:lin 1.1s var(--ease) .15s forwards}
+@keyframes lin{to{opacity:1;transform:none}}
+.loader-bar{width:min(220px,48vw);height:1px;background:rgba(255,255,255,.18);overflow:hidden}
+.loader-bar i{display:block;height:100%;width:0;background:var(--gold);animation:lbar 1.7s var(--ease) .3s forwards}
+@keyframes lbar{to{width:100%}}
+.loader-tag{font-size:.7rem;letter-spacing:.4em;text-transform:uppercase;color:var(--gold-soft);opacity:0;animation:lin 1s ease .6s forwards}
+.lang-ar .loader-tag{letter-spacing:.14em;font-size:.9rem;text-transform:none}
+
+/* ============ NAV ============ */
+header{position:fixed;top:0;inset-inline:0;z-index:90;transition:.5s var(--ease);
+  background:linear-gradient(180deg,rgba(8,20,58,.62),rgba(8,20,58,0))}
+header.scrolled{background:rgba(11,24,66,.93);backdrop-filter:blur(20px) saturate(140%);-webkit-backdrop-filter:blur(20px) saturate(140%);border-bottom:1px solid var(--hair)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;padding-block:1.05rem}
+header.scrolled .nav{padding-block:.7rem}
+.nav-logo img{height:42px;width:auto;transition:.4s var(--ease)}
+header.scrolled .nav-logo img{height:34px}
+.nav-links{display:flex;align-items:center;gap:clamp(.9rem,2vw,2rem);list-style:none}
+.nav-links a{font-size:.9rem;color:var(--cream-dim);letter-spacing:.02em;position:relative;padding-block:.4rem;transition:.3s;white-space:nowrap}
+.nav-links a::after{content:"";position:absolute;inset-inline-start:0;bottom:0;width:0;height:1px;background:var(--acc);transition:width .4s var(--ease)}
+.nav-links a:hover{color:var(--cream)}
+.nav-links a:hover::after{width:100%}
+.nav-right{display:flex;align-items:center;gap:1rem}
+.lang-toggle{
+  display:inline-flex;align-items:center;gap:.4em;background:transparent;border:1px solid var(--glass-brd-2);
+  color:var(--cream);border-radius:100px;padding:.55em 1.1em;font-size:.82rem;font-weight:500;letter-spacing:.06em;transition:.4s var(--ease)
+}
+.lang-toggle:hover{border-color:var(--cream);background:var(--glass)}
+.theme-toggle{padding:.5em;width:38px;height:38px;justify-content:center}
+.theme-toggle svg{width:18px;height:18px}
+[data-theme="dark"] .theme-toggle .ic-moon{display:none}
+[data-theme="light"] .theme-toggle .ic-sun{display:none}
+.nav-cta{padding:.7em 1.5em;font-size:.82rem}
+.burger{display:none;flex-direction:column;gap:5px;background:none;border:0;padding:.4rem}
+.burger span{width:24px;height:2px;background:var(--cream);transition:.35s var(--ease)}
+.burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+.m-menu{position:fixed;inset:0;z-index:80;background:rgba(11,24,66,.97);backdrop-filter:blur(20px);
+  display:flex;flex-direction:column;justify-content:center;align-items:center;gap:1.5rem;
+  opacity:0;visibility:hidden;transition:.5s var(--ease);padding:2rem}
+.m-menu.open{opacity:1;visibility:visible}
+.m-menu a:not(.btn){font-family:var(--font-display);font-size:1.6rem;color:var(--cream)}
+.m-menu .btn{margin-top:1rem}
+
+/* ============ HERO ============ */
+.hero{min-height:90svh;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;padding:7.5rem 0 clamp(3rem,6vh,4.5rem);overflow:hidden;color:var(--cream)}
+.hero h1{color:var(--cream)}
+.hero h1 .accent{color:var(--gold-soft)}
+.hero-bg{position:absolute;inset:0;z-index:-1;overflow:hidden;background:#0a1748}
+.hero-bg img{position:absolute;inset:0;z-index:1;width:100%;height:100%;object-fit:cover;
+  object-position:50% 40%;filter:contrast(1.05) saturate(1.04);animation:kb 22s ease-out forwards}
+@keyframes kb{from{transform:scale(1.12)}to{transform:scale(1)}}
+.hero-bg::after{content:"";position:absolute;inset:0;z-index:2;
+  background:
+   linear-gradient(180deg,rgba(8,20,58,.72) 0%,rgba(11,24,66,.34) 42%,rgba(8,18,52,.94) 100%),
+   radial-gradient(80% 72% at 50% 44%,rgba(21,52,135,.34),rgba(21,52,135,.1) 82%)}
+.hero-inner{display:flex;flex-direction:column;align-items:center;width:100%}
+.hero .eyebrow{justify-content:center}
+.hero h1{margin:1.3rem 0 1.3rem;text-wrap:balance}
+.hero .lead{margin:0 auto 2rem;max-width:58ch;color:var(--cream-dim)}
+.hero-ctas{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center}
+.hero-specbar{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;
+  gap:.4rem clamp(1.2rem,3vw,2.6rem);margin-top:2.6rem;padding:1rem clamp(1.2rem,3vw,2rem);
+  border:1px solid var(--glass-brd);border-radius:16px;background:var(--glass);
+  backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+.hsb{display:flex;flex-direction:column;gap:.25rem;position:relative;padding-inline:clamp(.4rem,1.5vw,1rem)}
+.hsb+.hsb::before{content:"";position:absolute;inset-inline-start:0;top:50%;transform:translateY(-50%);width:1px;height:28px;background:var(--hair)}
+.hsb-k{font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--stone-2)}
+.lang-ar .hsb-k{letter-spacing:0;font-size:.82rem;text-transform:none}
+.hsb-v{font-size:1rem;font-weight:500;color:var(--cream)}
+.lang-ar .hsb-v{font-weight:600}
+
+/* ============ section heading block ============ */
+.sec-head{max-width:72ch;margin-bottom:clamp(1.8rem,3.4vw,2.8rem)}
+.sec-head .h2{margin:1.3rem 0 1.3rem}
+
+/* ============ CONCEPT ============ */
+.concept{text-align:center}
+.concept .wrap{overflow:hidden}
+.concept .sec-head{margin-inline:auto;text-align:center}
+.concept .eyebrow{justify-content:center}
+.concept .h2{font-size:clamp(2rem,4.6vw,3.5rem);max-width:20ch;margin-inline:auto}
+.concept .lead{margin-inline:auto;text-align:center;margin-top:1.8rem}
+.concept-motif{margin-top:2.6rem;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--hair);
+  border:1px solid var(--hair);border-radius:20px;overflow:hidden}
+.cm{padding:2.4rem 1.6rem;background:var(--cm-bg);text-align:center}
+.cm .ic{width:46px;height:46px;margin:0 auto .9rem;border-radius:13px;display:grid;place-items:center;color:var(--acc);
+  background:linear-gradient(150deg,rgba(201,168,106,.28),rgba(255,255,255,.02));border:1px solid var(--glass-brd)}
+.cm .ic svg{width:22px;height:22px}
+.cm .cm-n{font-family:var(--font-display);font-size:1.7rem;font-weight:700;color:var(--gold);line-height:1;margin-bottom:.55rem}
+.cm h3{font-size:1.12rem;margin-bottom:.5rem}
+.cm p{font-size:.94rem;color:var(--stone-2);font-weight:300}
+.lang-ar .cm p{font-weight:400}
+
+/* ============ OFFERINGS / MIX ============ */
+.mix-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(1.8rem,4vw,3.2rem);align-items:center;margin-top:clamp(1.6rem,3vw,2.4rem)}
+.mix-stats{display:flex;flex-direction:column;gap:1rem}
+.mstat{border-radius:18px;padding:1.5rem 1.6rem;border:1px solid var(--glass-brd);background:var(--cell-bg);
+  transition:.4s var(--ease)}
+.mstat:hover{background:var(--cell-bg-h);transform:translateY(-3px);border-color:var(--glass-brd-2)}
+.mstat .n{font-family:var(--font-display);font-size:clamp(2.2rem,4vw,3rem);line-height:1;color:var(--gold);font-weight:600}
+.mstat.teal .n{color:var(--teal-soft)}
+.mstat .k{font-size:.98rem;color:var(--cream-dim);margin-top:.5rem}
+.mix-table{border-radius:18px;overflow:hidden;border:1px solid var(--glass-brd);background:var(--cell-bg)}
+.mix-table table{width:100%;border-collapse:collapse;font-variant-numeric:lining-nums tabular-nums}
+.mix-table th,.mix-table td{padding:.95rem 1.1rem;text-align:start;font-size:.98rem}
+.mix-table thead th{background:var(--navy-deep);color:var(--cream);font-weight:600;font-family:var(--font-display)}
+[data-theme="light"] .mix-table thead th{background:var(--navy)}
+.mix-table tbody td{color:var(--cream-dim);border-top:1px solid var(--hair)}
+.mix-table tbody tr:nth-child(even) td{background:rgba(255,255,255,.02)}
+[data-theme="light"] .mix-table tbody tr:nth-child(even) td{background:rgba(21,52,135,.03)}
+.mix-table tbody tr.total td{background:linear-gradient(90deg,rgba(201,168,106,.18),rgba(201,168,106,.05));color:var(--cream);font-weight:600}
+.mix-table td .cat{display:inline-flex;align-items:center;gap:.55rem}
+.mix-table td .sw{width:11px;height:11px;border-radius:3px;flex:0 0 auto}
+.mix-note{margin-top:1rem;font-size:.9rem;color:var(--stone)}
+
+/* ============ FEATURES ============ */
+.feat2-sub{margin-top:1rem;max-width:52ch;color:var(--stone-2);font-weight:300}
+.lang-ar .feat2-sub{font-weight:400}
+.feat-grid2{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--hair);
+  border:1px solid var(--hair);border-radius:22px;overflow:hidden;margin-top:clamp(1.8rem,3.4vw,2.6rem)}
+.feat-cell{position:relative;background:var(--cell-bg);padding:clamp(1.9rem,2.4vw,2.7rem);
+  overflow:hidden;transition:background .5s var(--ease)}
+.feat-cell::before{content:"";position:absolute;inset:0;
+  background:radial-gradient(130% 110% at 100% 0,rgba(201,168,106,.2),transparent 55%);
+  opacity:0;transition:opacity .5s var(--ease)}
+.feat-cell:hover{background:var(--cell-bg-h)}
+.feat-cell:hover::before{opacity:1}
+.feat-num{position:absolute;inset-inline-end:1.4rem;top:1rem;font-family:var(--font-display);font-weight:500;
+  font-size:3.4rem;line-height:1;color:var(--acc-2);opacity:.16;transition:opacity .5s var(--ease);pointer-events:none}
+.feat-cell:hover .feat-num{opacity:.36}
+.feat-top{display:flex;align-items:center;gap:.9rem;margin-bottom:.95rem;position:relative}
+.feat-cell .ic{flex:0 0 auto;width:48px;height:48px;border-radius:13px;display:grid;place-items:center;
+  color:var(--acc);background:linear-gradient(150deg,rgba(201,168,106,.3),rgba(255,255,255,.02));
+  border:1px solid var(--glass-brd);transition:transform .5s var(--ease)}
+.feat-cell:hover .ic{transform:translateY(-3px)}
+.feat-cell .ic svg{width:23px;height:23px}
+.feat-cell h3{font-size:1.2rem;line-height:1.3;position:relative}
+.feat-cell p{color:var(--stone-2);font-size:.95rem;font-weight:300;position:relative;margin-top:.15rem}
+.lang-ar .feat-cell p{font-weight:400}
+
+/* ============ SPLIT ============ */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
+.split-media{position:relative;border-radius:24px;overflow:hidden;aspect-ratio:4/5;
+  border:1px solid var(--glass-brd);box-shadow:0 18px 48px -36px rgba(0,0,0,.5)}
+.split-media img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--ease)}
+.split-media:hover img{transform:scale(1.05)}
+.split-media::after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 40%,rgba(8,20,58,.32))}
+#services .split-media{aspect-ratio:3/4}
+
+/* ============ SERVICES GRID ============ */
+.svc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.75rem;margin-top:1.7rem}
+.svc{display:flex;align-items:flex-start;gap:.75rem;padding:.95rem 1rem;border-radius:14px;
+  background:var(--cell-bg);border:1px solid var(--hair);transition:.4s var(--ease)}
+.svc:hover{background:var(--cell-bg-h);border-color:var(--glass-brd-2);transform:translateY(-2px)}
+.svc .ic{flex:0 0 auto;width:36px;height:36px;border-radius:10px;display:grid;place-items:center;color:var(--acc);
+  background:linear-gradient(150deg,rgba(201,168,106,.26),rgba(255,255,255,.02));border:1px solid var(--glass-brd)}
+.svc .ic svg{width:18px;height:18px}
+.svc b{font-size:.98rem;color:var(--cream);font-weight:600;display:block;font-family:var(--font-display)}
+.svc span{font-size:.86rem;color:var(--stone-2);line-height:1.4}
+
+/* ============ PLAN VIEWER ============ */
+.plan-tabs{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:clamp(1.4rem,3vw,2.2rem);justify-content:center}
+.plan-tab{min-width:48px;height:48px;padding:0 1.3rem;border-radius:12px;border:1px solid var(--glass-brd);
+  background:var(--glass);color:var(--cream-dim);font-family:var(--font-display);font-size:1rem;
+  display:grid;place-items:center;transition:.35s var(--ease)}
+.lang-ar .plan-tab{font-size:1.02rem}
+.plan-tab:hover{border-color:var(--acc);color:var(--cream);transform:translateY(-2px)}
+.plan-tab.active{background:var(--btn-fill);color:var(--btn-ink);border-color:transparent}
+.plan-view{margin-top:1.5rem;border-radius:20px;overflow:auto;border:1px solid var(--glass-brd);
+  background:#fff;box-shadow:0 18px 48px -36px rgba(0,0,0,.5);-webkit-overflow-scrolling:touch}
+.plan-view img{width:100%;display:block;max-height:76vh;object-fit:contain;margin-inline:auto;background:#fff}
+.plan-cap{margin-top:1.1rem;text-align:center;color:var(--stone-2);font-size:1rem}
+.plan-cap b{color:var(--cream);font-weight:600;font-family:var(--font-display);font-size:1.12rem}
+.plan-hint{margin-top:.7rem;text-align:center;font-size:.85rem;color:var(--stone);
+  display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:.5rem 1.1rem}
+.plan-hint a{color:var(--acc);border-bottom:1px solid transparent;transition:.3s}
+.plan-hint a:hover{border-color:var(--acc)}
+.plan-swipe{display:none}
+
+/* ============ LOCATION / landmarks ============ */
+.loc-chips{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.5rem}
+.loc-chip{display:inline-flex;align-items:center;gap:.55rem;padding:.6rem .95rem;border-radius:100px;
+  border:1px solid var(--glass-brd);background:var(--cell-bg);font-size:.9rem;color:var(--cream-dim)}
+.loc-chip svg{width:15px;height:15px;color:var(--acc)}
+.lm-list{list-style:none;display:flex;flex-direction:column;margin-top:.5rem}
+.lm-list li{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.9rem 0;border-top:1px solid var(--hair)}
+.lm-list li:last-child{border-bottom:1px solid var(--hair)}
+.lm-name{display:flex;align-items:center;gap:.75rem;color:var(--cream-dim);font-size:1.02rem}
+.lm-name .dot{width:7px;height:7px;border-radius:50%;background:var(--acc);flex:0 0 auto}
+.lm-time{color:var(--acc-2);font-size:.92rem;white-space:nowrap;font-weight:500}
+.lm-time .km{color:var(--stone);font-weight:400}
+.loc-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:clamp(2rem,4vw,3.5rem);align-items:stretch;margin-top:clamp(1.6rem,3vw,2.4rem)}
+.loc-map{border-radius:20px;overflow:hidden;border:1px solid var(--glass-brd);box-shadow:0 18px 48px -36px rgba(0,0,0,.5);min-height:360px;background:#fff}
+.loc-map img{width:100%;height:100%;object-fit:cover;display:block}
+
+/* ============ GALLERY ============ */
+.gal-wrap{position:relative;margin-top:clamp(.5rem,2vw,1.5rem)}
+.gal-slider{position:relative;direction:ltr;overflow-x:auto;overflow-y:hidden;
+  scroll-snap-type:x proximity;scroll-behavior:smooth;cursor:grab;
+  scrollbar-width:none;-ms-overflow-style:none;
+  -webkit-mask:linear-gradient(90deg,transparent,#000 3%,#000 97%,transparent);
+  mask:linear-gradient(90deg,transparent,#000 3%,#000 97%,transparent)}
+.gal-slider::-webkit-scrollbar{display:none}
+.gal-slider.dragging{cursor:grabbing;scroll-snap-type:none;scroll-behavior:auto}
+.gal-slider.dragging img{pointer-events:none}
+.gal-track{display:flex;gap:1rem;width:max-content;padding-inline:.3rem}
+.gal-slide{flex:0 0 auto;width:clamp(260px,30vw,380px);height:clamp(300px,42vh,420px);
+  scroll-snap-align:center;position:relative;border-radius:16px;overflow:hidden;
+  border:1px solid var(--glass-brd);background:var(--cell-bg)}
+.gal-slide img{width:100%;height:100%;object-fit:cover;-webkit-user-drag:none;user-select:none}
+.gal-slide::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(8,20,58,.4),transparent 55%)}
+.gal-nav{position:absolute;top:50%;transform:translateY(-50%);z-index:4;
+  width:46px;height:46px;border-radius:50%;display:grid;place-items:center;
+  border:1px solid var(--glass-brd-2);background:var(--totop-bg);color:var(--cream);
+  backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  box-shadow:0 12px 30px -18px rgba(0,0,0,.5);transition:.35s var(--ease)}
+.gal-nav:hover{background:var(--btn-fill);color:var(--btn-ink);border-color:transparent}
+.gal-nav svg{width:19px;height:19px}
+.gal-nav.prev{left:-6px}
+.gal-nav.next{right:-6px}
+.gal-nav[disabled]{opacity:0;pointer-events:none}
+.gal-hint{margin-top:.9rem;text-align:center;font-size:.85rem;color:var(--stone);
+  display:inline-flex;align-items:center;gap:.45rem;width:100%;justify-content:center}
+
+/* ============ CONTACT / FORM ============ */
+.contact{position:relative}
+.form-shell{
+  background:var(--glass);backdrop-filter:blur(24px) saturate(140%);-webkit-backdrop-filter:blur(24px) saturate(140%);
+  border:1px solid var(--glass-brd);border-radius:28px;padding:clamp(2rem,5vw,4rem);
+  box-shadow:0 16px 44px -32px rgba(0,0,0,.4);position:relative;overflow:hidden}
+.form-shell::before{content:"";position:absolute;width:380px;height:380px;border-radius:50%;
+  background:radial-gradient(circle,rgba(201,168,106,.42),transparent 70%);top:-160px;inset-inline-end:-120px;filter:blur(20px)}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.3rem 1.5rem;position:relative}
+.field{display:flex;flex-direction:column;gap:.5rem}
+.field.full{grid-column:1/-1}
+.field label{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--stone-2)}
+.lang-ar .field label{letter-spacing:0;font-size:.9rem;text-transform:none}
+.field input,.field select,.field textarea{
+  background:var(--input-bg);border:1px solid var(--glass-brd);border-radius:12px;
+  padding:1em 1.1em;color:var(--cream);font-family:inherit;font-size:1rem;transition:.35s var(--ease);width:100%}
+.field textarea{resize:vertical;min-height:120px}
+.field input::placeholder,.field textarea::placeholder{color:var(--stone-2);opacity:.6}
+.field input:focus,.field select:focus,.field textarea:focus{
+  outline:none;border-color:var(--gold-soft);background:var(--input-bg-focus);box-shadow:0 0 0 4px rgba(201,168,106,.18)}
+.field select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' fill='none' stroke='%23e2c891' stroke-width='2'%3E%3Cpath d='M3 5l4 4 4-4'/%3E%3C/svg%3E");background-repeat:no-repeat}
+[dir=rtl] .field select{background-position:left 1.1rem center}
+[dir=ltr] .field select{background-position:right 1.1rem center}
+.field select option{background:var(--select-bg);color:var(--cream)}
+.form-foot{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;margin-top:2rem;flex-wrap:wrap}
+.form-note{font-size:.82rem;color:var(--stone);max-width:38ch}
+.form-shell .btn-primary{padding:1.1em 2.6em}
+.form-success{display:none;text-align:center;padding:1rem 0}
+.form-success.show{display:block;animation:lin .6s ease}
+.form-success .tick{width:64px;height:64px;border-radius:50%;border:1px solid var(--acc);display:grid;place-items:center;margin:0 auto 1.4rem;color:var(--acc)}
+.form-success h3{font-size:1.8rem;margin-bottom:.6rem}
+.form-success p{color:var(--stone-2)}
+.contact-aside{margin-bottom:clamp(1.6rem,3vw,2.4rem)}
+.contact-lines{display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem 1.6rem;margin-top:1.4rem}
+.contact-lines a{display:inline-flex;align-items:center;gap:.5rem;color:var(--cream-dim);font-size:1rem;transition:.3s}
+.contact-lines a:hover{color:var(--acc)}
+.contact-lines svg{width:16px;height:16px;color:var(--acc)}
+
+/* ============ FOOTER ============ */
+footer{border-top:1px solid var(--hair);padding-block:clamp(3rem,6vw,5rem) 2rem;background:var(--footer-bg)}
+.foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1.2fr;gap:2.5rem;margin-bottom:2.4rem}
+.foot-logo img{height:52px;margin-bottom:1.4rem}
+.foot-brand p{color:var(--stone-2);font-weight:300;max-width:38ch}
+.lang-ar .foot-brand p{font-weight:400}
+.foot-col h5{font-family:var(--font-body);font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--acc);margin-bottom:1.3rem;font-weight:600}
+.lang-ar .foot-col h5{letter-spacing:.05em}
+.foot-col ul{list-style:none;display:flex;flex-direction:column;gap:.85rem}
+.foot-col a,.foot-col li{color:var(--cream-dim);font-size:.95rem;transition:.3s}
+.foot-col a:hover{color:var(--cream)}
+.foot-agent{margin-top:1.2rem;font-size:.82rem;color:var(--stone);line-height:1.9}
+.foot-agent b{color:var(--cream-dim);font-weight:600}
+.socials{display:flex;gap:.8rem;margin-top:1.6rem}
+.socials a{width:40px;height:40px;border-radius:50%;border:1px solid var(--glass-brd);display:grid;place-items:center;color:var(--cream-dim);transition:.4s var(--ease)}
+.socials a:hover{border-color:var(--acc);color:var(--cream);transform:translateY(-3px)}
+.socials svg{width:17px;height:17px}
+.foot-bottom{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding-top:1.8rem;border-top:1px solid var(--hair);flex-wrap:wrap}
+.foot-bottom p{font-size:.82rem;color:var(--stone)}
+
+/* ============ MODAL ============ */
+.modal{position:fixed;inset:0;z-index:200;display:flex;align-items:center;justify-content:center;padding:1.2rem;
+  opacity:0;visibility:hidden;transition:opacity .45s var(--ease),visibility .45s var(--ease)}
+.modal.open{opacity:1;visibility:visible}
+.modal-overlay{position:absolute;inset:0;background:rgba(5,14,40,.78);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.modal-card{position:relative;width:min(640px,100%);max-height:90vh;overflow:hidden auto;
+  background:var(--modal-bg);
+  border:1px solid var(--glass-brd);border-radius:24px;padding:clamp(1.8rem,4vw,3rem);
+  box-shadow:0 24px 70px -42px rgba(0,0,0,.6);transform:translateY(26px) scale(.97);opacity:0;
+  transition:transform .5s var(--ease),opacity .5s var(--ease)}
+.modal.open .modal-card{transform:none;opacity:1}
+.modal-card::before{content:"";position:absolute;width:320px;height:320px;border-radius:50%;
+  background:radial-gradient(circle,rgba(201,168,106,.38),transparent 70%);top:-160px;inset-inline-end:-120px;pointer-events:none}
+.modal-close{position:absolute;top:1rem;inset-inline-end:1rem;width:40px;height:40px;border-radius:50%;
+  border:1px solid var(--glass-brd);background:var(--glass);color:var(--cream);display:grid;place-items:center;
+  font-size:1rem;line-height:1;transition:.4s var(--ease);z-index:3}
+.modal-close:hover{background:var(--glass-2);border-color:var(--cream);transform:rotate(90deg)}
+.modal-head{margin-bottom:1.5rem;position:relative}
+.modal-head .eyebrow{margin-bottom:.8rem}
+.modal-head h3{font-size:clamp(1.5rem,3vw,2.1rem)}
+.modal-head p{color:var(--stone-2);font-size:.95rem;margin-top:.55rem;font-weight:300}
+.lang-ar .modal-head p{font-weight:400}
+.modal .form-grid{gap:1rem 1.1rem;position:relative}
+.modal .form-foot{margin-top:1.4rem}
+
+/* ============ FLOATING ============ */
+.to-top{position:fixed;bottom:1.5rem;inset-inline-end:1.5rem;z-index:120;
+  width:48px;height:48px;border-radius:50%;border:1px solid var(--glass-brd-2);
+  background:var(--totop-bg);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  color:var(--cream);display:grid;place-items:center;
+  opacity:0;visibility:hidden;transform:translateY(14px);transition:.45s var(--ease)}
+.to-top.show{opacity:1;visibility:visible;transform:none}
+.to-top:hover{background:var(--navy-800);border-color:var(--acc);color:#fff;transform:translateY(-4px)}
+.to-top svg{width:20px;height:20px}
+.wa-float{position:fixed;bottom:1.5rem;inset-inline-start:1.5rem;z-index:120;
+  width:52px;height:52px;border-radius:50%;display:grid;place-items:center;color:#fff;
+  background:#1f9d55;box-shadow:0 14px 34px -18px rgba(31,157,85,.9);transition:.4s var(--ease)}
+.wa-float:hover{transform:translateY(-4px) scale(1.05)}
+.wa-float svg{width:26px;height:26px}
+
+/* ============ REVEAL ============ */
+.reveal{opacity:0;transform:translateY(30px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+
+/* ============ RESPONSIVE ============ */
+@media(max-width:1080px){
+  .nav-links{gap:.9rem}
+  .nav-links a{font-size:.84rem}
+  .concept-motif{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:980px){
+  .nav-links,.nav-cta{display:none}
+  .burger{display:flex}
+  .feat-grid2{grid-template-columns:repeat(2,1fr)}
+  .loc-grid{grid-template-columns:1fr;gap:2rem}
+  .split{grid-template-columns:1fr;gap:2.5rem}
+  #services .split-inner{order:2}
+  .mix-grid{grid-template-columns:1fr;gap:2rem}
+  .gal-nav{display:none}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .foot-brand{grid-column:1/-1}
+  .plan-view img{max-height:none;min-width:900px;object-fit:contain}
+  .plan-swipe{display:inline-flex;align-items:center;gap:.4rem}
+}
+@media(max-width:560px){
+  .hero-specbar{gap:.4rem 1rem}
+  .hsb{flex:1 0 40%;text-align:center;align-items:center}
+  .hsb+.hsb::before{display:none}
+  .feat-grid2{grid-template-columns:1fr}
+  .concept-motif{grid-template-columns:1fr}
+  .svc-grid{grid-template-columns:1fr}
+  .form-grid{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+  .foot-bottom{flex-direction:column;text-align:center}
+  .wa-float{width:46px;height:46px;bottom:1.1rem;inset-inline-start:1.1rem}
+  .to-top{bottom:1.1rem;inset-inline-end:1.1rem}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important}
+  .reveal{opacity:1;transform:none;transition:none}
+  .gal-slider{scroll-behavior:auto}
+}
+</style>
+</head>
+<body class="lang-ar lock">
+
+<!-- ============ LOADER ============ -->
+<div id="loader">
+  <span class="bloom" aria-hidden="true"></span>
+  <div class="loader-inner">
+    <img id="loaderLogo" src="assets/logo-white.png" alt="بالين بلو ميزون 2" />
+    <div class="loader-bar"><i></i></div>
+    <div class="loader-tag" data-ar="ليس قريباً من الحركة، بل جزءٌ منها" data-en="Not near the movement — part of it">ليس قريباً من الحركة، بل جزءٌ منها</div>
+  </div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header id="header">
+  <div class="wrap nav">
+    <a href="#top" class="nav-logo"><img id="navLogo" src="assets/logo-white.png" alt="بالين بلو ميزون 2" /></a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#concept" data-ar="الرياض" data-en="Riyadh">الرياض</a></li>
+        <li><a href="#offerings" data-ar="المكوّنات" data-en="Composition">المكوّنات</a></li>
+        <li><a href="#plan" data-ar="المخططات" data-en="Plans">المخططات</a></li>
+        <li><a href="#services" data-ar="المواصفات" data-en="Specs">المواصفات</a></li>
+        <li><a href="#location" data-ar="الموقع" data-en="Location">الموقع</a></li>
+        <li><a href="#gallery" data-ar="المعرض" data-en="Gallery">المعرض</a></li>
+      </ul>
+    </nav>
+    <div class="nav-right">
+      <button class="lang-toggle theme-toggle" id="themeBtn" aria-label="Toggle light/dark theme">
+        <svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.2M12 19.8V22M4.2 4.2l1.6 1.6M18.2 18.2l1.6 1.6M2 12h2.2M19.8 12H22M4.2 19.8l1.6-1.6M18.2 5.8l1.6-1.6"/></svg>
+        <svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.3 6.3 0 0 0 10.5 10.5z"/></svg>
+      </button>
+      <button class="lang-toggle" id="langBtn" aria-label="Switch language"><span data-ar="EN" data-en="ع">EN</span></button>
+      <a href="#contact" data-open-modal class="btn btn-ghost nav-cta" data-ar="سجّل اهتمامك" data-en="Register interest">سجّل اهتمامك</a>
+      <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- mobile menu -->
+<div class="m-menu" id="mMenu">
+  <a href="#concept" data-ar="الرياض" data-en="Riyadh">الرياض</a>
+  <a href="#offerings" data-ar="المكوّنات" data-en="Composition">المكوّنات</a>
+  <a href="#plan" data-ar="المخططات" data-en="Plans">المخططات</a>
+  <a href="#services" data-ar="المواصفات" data-en="Specs">المواصفات</a>
+  <a href="#location" data-ar="الموقع" data-en="Location">الموقع</a>
+  <a href="#gallery" data-ar="المعرض" data-en="Gallery">المعرض</a>
+  <a href="#contact" data-open-modal class="btn btn-primary" data-ar="سجّل اهتمامك" data-en="Register interest">سجّل اهتمامك</a>
+</div>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="hero-bg">
+    <img src="assets/hero.jpg" alt="برج بالين بلو ميزون 2 في حي الصحافة بالرياض" />
+  </div>
+  <div class="wrap hero-inner">
+    <span class="eyebrow" data-ar="المملكة العربية السعودية · حي الصحافة، الرياض" data-en="Al Sahafah District · Riyadh, KSA">المملكة العربية السعودية · حي الصحافة، الرياض</span>
+    <h1 class="display" data-ar="ليس قريباً من الحركة،<br><span class=&quot;accent&quot;>بل جزءٌ</span> منها" data-en="Not near the movement,<br><span class=&quot;accent&quot;>it is</span> part of it">ليس قريباً من الحركة،<br><span class="accent">بل جزءٌ</span> منها</h1>
+    <p class="lead" data-ar="بالين بلو ميزون 2 — برجٌ تجاري من 25 طابقاً على الشريط التجاري في حي الصحافة بالرياض، بمساحةٍ قابلة للتأجير 14,365 م² و322 موقفاً، وواجهةٍ مباشرة على العصب المالي للعاصمة." data-en="Baleine Bleu Maison 2 — a 25-floor commercial tower on the commercial strip in Al Sahafah, Riyadh: 14,365 m² of leasable space, 322 parking spots, and a direct frontage on the capital's financial nerve.">بالين بلو ميزون 2 — برجٌ تجاري من 25 طابقاً على الشريط التجاري في حي الصحافة بالرياض، بمساحةٍ قابلة للتأجير 14,365 م² و322 موقفاً، وواجهةٍ مباشرة على العصب المالي للعاصمة.</p>
+    <div class="hero-ctas">
+      <a href="#contact" data-open-modal class="btn btn-primary" data-ar="سجّل اهتمامك" data-en="Register interest">سجّل اهتمامك</a>
+      <a href="#plan" class="btn btn-ghost" data-ar="استعرض المخططات" data-en="Explore the plans">استعرض المخططات <span class="arr">→</span></a>
+    </div>
+    <div class="hero-specbar reveal">
+      <div class="hsb"><span class="hsb-k" data-ar="الموقع" data-en="Location">الموقع</span><span class="hsb-v" data-ar="حي الصحافة · الرياض" data-en="Al Sahafah · Riyadh">حي الصحافة · الرياض</span></div>
+      <div class="hsb"><span class="hsb-k" data-ar="الطوابق" data-en="Floors">الطوابق</span><span class="hsb-v num-lat">25</span></div>
+      <div class="hsb"><span class="hsb-k" data-ar="مساحة تأجيرية" data-en="Leasable">مساحة تأجيرية</span><span class="hsb-v num-lat">14,365 <span data-ar="م²" data-en="m²">م²</span></span></div>
+      <div class="hsb"><span class="hsb-k" data-ar="المواقف" data-en="Parking">المواقف</span><span class="hsb-v num-lat">322</span></div>
+      <div class="hsb"><span class="hsb-k" data-ar="المصاعد" data-en="Elevators">المصاعد</span><span class="hsb-v" data-ar="4 كوني" data-en="4 Kone">4 كوني</span></div>
+      <div class="hsb"><span class="hsb-k" data-ar="الواجهة" data-en="Frontage">الواجهة</span><span class="hsb-v" data-ar="تجارية مباشرة" data-en="Direct commercial">تجارية مباشرة</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONCEPT / RIYADH ============ -->
+<section class="concept" id="concept">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow" data-ar="من الرياض" data-en="From Riyadh">من الرياض</span>
+      <h2 class="h2" data-ar="المدينة التي قرّرت أن تتضاعف." data-en="The city that decided to double.">المدينة التي قرّرت أن تتضاعف.</h2>
+      <p class="lead" data-ar="مدينةٌ يسكنها اليوم أكثر من ثمانية ملايين نسمة، ورؤيةٌ تخطط لتجاوز عشرة ملايين. شركاتٌ عالمية تنقل مقارّها، وطلبٌ على المساحات التجارية بمعدلات لم تشهدها المدينة من قبل — من يدخل هذا السوق اليوم يدخل سوقاً تجارياً متسارعاً." data-en="A city home to more than eight million people today, with a vision planning to exceed ten million. Global companies are relocating their headquarters, and demand for commercial space is rising at rates the city has never seen — whoever enters this market today enters an accelerating commercial arena.">مدينةٌ يسكنها اليوم أكثر من ثمانية ملايين نسمة، ورؤيةٌ تخطط لتجاوز عشرة ملايين. شركاتٌ عالمية تنقل مقارّها، وطلبٌ على المساحات التجارية بمعدلات لم تشهدها المدينة من قبل — من يدخل هذا السوق اليوم يدخل سوقاً تجارياً متسارعاً.</p>
+    </div>
+    <div class="concept-motif reveal">
+      <div class="cm">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9.5" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13A4 4 0 0 1 16 11"/></svg></span>
+        <div class="cm-n num-lat" data-ar="+8M" data-en="8M+">+8M</div>
+        <h3 data-ar="عدد السكان" data-en="Population">عدد السكان</h3>
+        <p data-ar="أكثر من ثمانية ملايين نسمة اليوم، في نموٍّ لا يتوقف." data-en="More than eight million people today, in relentless growth.">أكثر من ثمانية ملايين نسمة اليوم، في نموٍّ لا يتوقف.</p>
+      </div>
+      <div class="cm">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 3v9l6 3"/></svg></span>
+        <div class="cm-n num-lat">2030</div>
+        <h3 data-ar="رؤية المملكة" data-en="Vision 2030">رؤية المملكة</h3>
+        <p data-ar="خطةٌ تتّجه بالعاصمة نحو أكثر من عشرة ملايين نسمة." data-en="A plan steering the capital toward more than ten million people.">خطةٌ تتّجه بالعاصمة نحو أكثر من عشرة ملايين نسمة.</p>
+      </div>
+      <div class="cm">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 17l6-6 4 4 8-8"/><path d="M21 7v5h-5"/></svg></span>
+        <div class="cm-n num-lat">#1</div>
+        <h3 data-ar="الأسرع نموّاً" data-en="Fastest growing">الأسرع نموّاً</h3>
+        <p data-ar="الرياض الأولى نموّاً بين مدن الشرق الأوسط." data-en="Riyadh, the fastest-growing city in the Middle East.">الرياض الأولى نموّاً بين مدن الشرق الأوسط.</p>
+      </div>
+      <div class="cm">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18M5 21V8l7-5 7 5v13"/><path d="M9 21v-5h6v5"/><path d="M9 11h.01M15 11h.01"/></svg></span>
+        <div class="cm-n" data-ar="طلبٌ" data-en="Demand">طلبٌ</div>
+        <h3 data-ar="متصاعد" data-en="On the rise">متصاعد</h3>
+        <p data-ar="شركاتٌ متعددة الجنسيات تنقل مقارّها، وطلبٌ غير مسبوق على المساحات التجارية." data-en="Multinationals relocating HQs, and unprecedented demand for commercial space.">شركاتٌ متعددة الجنسيات تنقل مقارّها، وطلبٌ غير مسبوق على المساحات التجارية.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OFFERINGS / COMPOSITION ============ -->
+<section id="offerings">
+  <div class="wrap">
+    <div class="sec-head reveal" style="text-align:center;margin-inline:auto">
+      <span class="eyebrow" style="justify-content:center" data-ar="المكوّنات" data-en="Composition">المكوّنات</span>
+      <h2 class="h2" style="margin:1.3rem auto;max-width:24ch" data-ar="برجٌ مكتمل، من القبو إلى القمة." data-en="A complete tower, basement to crown.">برجٌ مكتمل، من القبو إلى القمة.</h2>
+      <p class="lead" style="margin-inline:auto" data-ar="خمسة وعشرون طابقاً — خمسة أدوار قبو ومواقف، وأرضيٌّ تجاري باستقبالٍ ومعارض، وعشرون طابقاً مكتبياً بإضاءةٍ طبيعية من الجهات الأربع وبلا أعمدة داخلية." data-en="Twenty-five floors — five basement and parking levels, a commercial ground floor with reception and showrooms, and twenty office floors with natural light on four sides and no internal columns.">خمسة وعشرون طابقاً — خمسة أدوار قبو ومواقف، وأرضيٌّ تجاري باستقبالٍ ومعارض، وعشرون طابقاً مكتبياً بإضاءةٍ طبيعية من الجهات الأربع وبلا أعمدة داخلية.</p>
+    </div>
+    <div class="mix-grid">
+      <div class="mix-stats reveal">
+        <div class="mstat teal"><div class="n num-lat">25</div><div class="k" data-ar="طابقاً · 5 قبو + 20 فوق الأرض" data-en="floors · 5 basement + 20 above ground">طابقاً · 5 قبو + 20 فوق الأرض</div></div>
+        <div class="mstat"><div class="n num-lat">14,365 <span style="font-size:1.2rem" data-ar="م²" data-en="m²">م²</span></div><div class="k" data-ar="مساحة قابلة للتأجير" data-en="leasable built-up area">مساحة قابلة للتأجير</div></div>
+        <div class="mstat teal"><div class="n num-lat">322</div><div class="k" data-ar="موقف سيارات في القبو" data-en="underground parking spots">موقف سيارات في القبو</div></div>
+      </div>
+      <div class="mix-table reveal">
+        <table>
+          <thead>
+            <tr>
+              <th data-ar="المكوّن" data-en="Component">المكوّن</th>
+              <th data-ar="التفصيل" data-en="Detail">التفصيل</th>
+            </tr>
+          </thead>
+          <tbody class="num-lat">
+            <tr><td><span data-ar="الطوابق" data-en="Floors">الطوابق</span></td><td><span data-ar="25 (5 قبو + 20 فوق الأرض)" data-en="25 (5 basement + 20 above)">25 (5 قبو + 20 فوق الأرض)</span></td></tr>
+            <tr><td><span data-ar="مساحة الأرض" data-en="Land area">مساحة الأرض</span></td><td>2,500 <span data-ar="م²" data-en="m²">م²</span></td></tr>
+            <tr><td><span data-ar="إجمالي البناء" data-en="Total built-up">إجمالي البناء</span></td><td>26,865.7 <span data-ar="م²" data-en="m²">م²</span></td></tr>
+            <tr><td><span data-ar="قابلة للتأجير" data-en="Leasable">قابلة للتأجير</span></td><td>14,365.7 <span data-ar="م²" data-en="m²">م²</span></td></tr>
+            <tr><td><span data-ar="مواقف تحت الأرض" data-en="Underground parking">مواقف تحت الأرض</span></td><td>12,500 <span data-ar="م²" data-en="m²">م²</span> · 322 <span data-ar="موقف" data-en="spots">موقف</span></td></tr>
+            <tr class="total"><td data-ar="التكييف والمصاعد" data-en="HVAC & Elevators">التكييف والمصاعد</td><td><span data-ar="VRV Trane · 4 مصاعد كوني" data-en="VRV Trane · 4 Kone elevators">VRV Trane · 4 مصاعد كوني</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <p class="mix-note reveal" data-ar="* المساحات بالمتر المربع وفق المخطط المعتمد لمشروع بالين بلو ميزون 2." data-en="* Areas in square metres per the approved Baleine Bleu Maison 2 scheme.">* المساحات بالمتر المربع وفق المخطط المعتمد لمشروع بالين بلو ميزون 2.</p>
+  </div>
+</section>
+
+<!-- ============ PLAN VIEWER ============ -->
+<section id="plan">
+  <div class="wrap">
+    <div class="sec-head reveal" style="text-align:center;margin-inline:auto">
+      <span class="eyebrow" style="justify-content:center" data-ar="المخططات" data-en="Floor Plans">المخططات</span>
+      <h2 class="h2" style="margin:1.3rem auto;max-width:24ch" data-ar="المساقط كما اعتُمدت." data-en="The plans, as approved.">المساقط كما اعتُمدت.</h2>
+      <p class="lead" style="margin-inline:auto" data-ar="من مسقط القبو ومواقفه، إلى الدور الأرضي التجاري باستقباله ومعارضه، والطابق المكتبي النموذجي، وواجهات المبنى — لتقرأ البرج طابقاً طابقاً قبل زيارته." data-en="From the basement and its parking, to the commercial ground floor with reception and showrooms, the typical office floor, and the building elevations — read the tower floor by floor before you visit.">من مسقط القبو ومواقفه، إلى الدور الأرضي التجاري باستقباله ومعارضه، والطابق المكتبي النموذجي، وواجهات المبنى — لتقرأ البرج طابقاً طابقاً قبل زيارته.</p>
+    </div>
+    <div class="plan-tabs reveal" id="planTabs"></div>
+    <div class="plan-view reveal"><img id="planImg" src="assets/plan-ground.jpg" alt="بالين بلو ميزون 2 — المسقط الأرضي" loading="lazy" decoding="async" /></div>
+    <div class="plan-cap reveal"><b id="planTitle">الدور الأرضي</b> · <span id="planMeta">استقبال ومعارض تجارية</span></div>
+    <div class="plan-hint reveal">
+      <span class="plan-swipe"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="15" height="15"><path d="M4 12h16M8 8l-4 4 4 4M16 8l4 4-4 4"/></svg><span data-ar="اسحب أفقياً لتصفّح المسقط" data-en="Swipe sideways to pan the plan">اسحب أفقياً لتصفّح المسقط</span></span>
+      <a id="planFull" href="assets/plan-ground.jpg" target="_blank" rel="noopener" data-ar="افتح المخطط بالحجم الكامل ↗" data-en="Open full size ↗">افتح المخطط بالحجم الكامل ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES / SPECS ============ -->
+<section id="services">
+  <div class="wrap split">
+    <div class="split-media reveal">
+      <img src="assets/lobby.jpg" alt="بهو مزدوج الارتفاع بالرخام في برج بالين بلو ميزون 2" loading="lazy" decoding="async" />
+    </div>
+    <div class="split-inner reveal">
+      <span class="eyebrow" data-ar="مواصفات تعمل لصالح المستأجر" data-en="Built for the Tenant">مواصفات تعمل لصالح المستأجر</span>
+      <h2 class="h2" style="margin:1.3rem 0" data-ar="تصميمٌ يعمل لمصلحة من يشغله." data-en="Design that works for whoever occupies it.">تصميمٌ يعمل لمصلحة من يشغله.</h2>
+      <p class="lead" data-ar="من التكييف المركزي والمصاعد البانورامية إلى الإضاءة الطبيعية من الجهات الأربع — كل تفصيلٍ يخدم كفاءة المساحة وراحة المستخدم." data-en="From central air-conditioning and panoramic elevators to natural light on four sides — every detail serves space efficiency and occupant comfort.">من التكييف المركزي والمصاعد البانورامية إلى الإضاءة الطبيعية من الجهات الأربع — كل تفصيلٍ يخدم كفاءة المساحة وراحة المستخدم.</p>
+      <div class="svc-grid">
+        <div class="svc"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h18M3 12h18M3 16h18"/><path d="M7 8v8M17 8v8"/></svg></span><span><b data-ar="تكييف VRV Trane" data-en="VRV Trane HVAC">تكييف VRV Trane</b><span data-ar="نظام مركزي عالي الكفاءة." data-en="High-efficiency central system.">نظام مركزي عالي الكفاءة.</span></span></div>
+        <div class="svc"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="6" y="3" width="12" height="18" rx="1.5"/><path d="M12 6l-2 2h4l-2-2M12 18l-2-2h4l-2 2"/></svg></span><span><b data-ar="4 مصاعد كوني" data-en="4 Kone Elevators">4 مصاعد كوني</b><span data-ar="مصاعد بانورامية سريعة." data-en="Fast, panoramic elevators.">مصاعد بانورامية سريعة.</span></span></div>
+        <div class="svc"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M5 19l1.5-1.5M17.5 6.5L19 5"/></svg></span><span><b data-ar="إضاءة طبيعية" data-en="Natural Light">إضاءة طبيعية</b><span data-ar="من الجهات الأربع، بلا أعمدة داخلية." data-en="Four sides, no internal columns.">من الجهات الأربع، بلا أعمدة داخلية.</span></span></div>
+        <div class="svc"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3s6 6.4 6 10.2A6 6 0 0 1 6 13.2C6 9.4 12 3 12 3z"/></svg></span><span><b data-ar="أنظمة حريق متكاملة" data-en="Integrated Fire Systems">أنظمة حريق متكاملة</b><span data-ar="إنذار وإطفاء وطرد دخان." data-en="Alarm, fighting & smoke exhaust.">إنذار وإطفاء وطرد دخان.</span></span></div>
+        <div class="svc"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3M7 9h4M7 13h7"/></svg></span><span><b data-ar="إدارة مبنى BMS" data-en="BMS + Public Address">إدارة مبنى BMS</b><span data-ar="تحكّم ذكي ونظام نداء آلي." data-en="Smart control & public address.">تحكّم ذكي ونظام نداء آلي.</span></span></div>
+        <div class="svc"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21h18M6 21V7l6-4 6 4v14"/><path d="M10 21v-5h4v5"/></svg></span><span><b data-ar="ارتداد خلفي 27 م" data-en="27 m Rear Setback">ارتداد خلفي 27 م</b><span data-ar="واجهة تجارية مباشرة على الشارع." data-en="Direct commercial street frontage.">واجهة تجارية مباشرة على الشارع.</span></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURES ============ -->
+<section id="features">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow" data-ar="لماذا بالين بلو ميزون 2" data-en="Why Baleine Bleu Maison 2">لماذا بالين بلو ميزون 2</span>
+      <h2 class="h2" data-ar="ستّة أسبابٍ تجعله قراراً، لا خياراً." data-en="Six reasons it's a decision, not an option.">ستّة أسبابٍ تجعله قراراً، لا خياراً.</h2>
+      <p class="feat2-sub" data-ar="من الموقع والواجهة إلى المرونة والتوقيت — كل ميزةٍ تضع استثمارك في قلب حركة العاصمة." data-en="From location and frontage to flexibility and timing — every advantage places your investment at the heart of the capital's movement.">من الموقع والواجهة إلى المرونة والتوقيت — كل ميزةٍ تضع استثمارك في قلب حركة العاصمة.</p>
+    </div>
+    <div class="feat-grid2">
+      <article class="feat-cell reveal">
+        <span class="feat-num num-lat">01</span>
+        <div class="feat-top"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s-7-5.2-7-11a7 7 0 1 1 14 0c0 5.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span><h3 data-ar="حي الصحافة" data-en="Al Sahafah District">حي الصحافة</h3></div>
+        <p data-ar="العصب المالي للمدينة على امتداد طريق الملك فهد وشارع العليا — حيث الطلب موجودٌ ومتجدّد." data-en="The city's financial nerve along King Fahd Road and Olaya Street — where demand is present and renewing.">العصب المالي للمدينة على امتداد طريق الملك فهد وشارع العليا — حيث الطلب موجودٌ ومتجدّد.</p>
+      </article>
+      <article class="feat-cell reveal">
+        <span class="feat-num num-lat">02</span>
+        <div class="feat-top"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18M5 21V6l7-3 7 3v15"/><path d="M9 9h.01M15 9h.01M9 13h.01M15 13h.01M10 21v-4h4v4"/></svg></span><h3 data-ar="واجهة تجارية مباشرة" data-en="Direct Commercial Frontage">واجهة تجارية مباشرة</h3></div>
+        <p data-ar="خمسة وعشرون طابقاً تفتح على الشارع الرئيسي — لست بالقرب من الحركة، بل أنت جزءٌ منها." data-en="Twenty-five floors opening onto the main street — you're not near the movement, you're part of it.">خمسة وعشرون طابقاً تفتح على الشارع الرئيسي — لست بالقرب من الحركة، بل أنت جزءٌ منها.</p>
+      </article>
+      <article class="feat-cell reveal">
+        <span class="feat-num num-lat">03</span>
+        <div class="feat-top"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></span><h3 data-ar="مساحة تأجيرية مرنة" data-en="Flexible Leasable Space">مساحة تأجيرية مرنة</h3></div>
+        <p data-ar="14,365 م² بلا أعمدة داخلية، تستوعب التجزئة والمكاتب والخدمات بحرية تامة." data-en="14,365 m² with no internal columns — flexibly housing retail, offices and services.">14,365 م² بلا أعمدة داخلية، تستوعب التجزئة والمكاتب والخدمات بحرية تامة.</p>
+      </article>
+      <article class="feat-cell reveal">
+        <span class="feat-num num-lat">04</span>
+        <div class="feat-top"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg></span><h3 data-ar="جاهزٌ ومكتمل" data-en="Ready & Complete">جاهزٌ ومكتمل</h3></div>
+        <p data-ar="برجٌ منجز بمواصفاتٍ تشغيلية كاملة، ورخامٍ وتشطيباتٍ راقية، ومواقف وفيرة." data-en="A finished tower with complete operational specs, marble and refined finishes, and ample parking.">برجٌ منجز بمواصفاتٍ تشغيلية كاملة، ورخامٍ وتشطيباتٍ راقية، ومواقف وفيرة.</p>
+      </article>
+      <article class="feat-cell reveal">
+        <span class="feat-num num-lat">05</span>
+        <div class="feat-top"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/></svg></span><h3 data-ar="دقائق من كل معلم" data-en="Minutes from Every Landmark">دقائق من كل معلم</h3></div>
+        <p data-ar="برج المملكة وبوليفارد سيتي وكافد على بُعد 10 دقائق، ومترو الرياض 5 دقائق." data-en="Kingdom Centre, Boulevard City and KAFD 10 minutes away, Riyadh Metro 5.">برج المملكة وبوليفارد سيتي وكافد على بُعد 10 دقائق، ومترو الرياض 5 دقائق.</p>
+      </article>
+      <article class="feat-cell reveal">
+        <span class="feat-num num-lat">06</span>
+        <div class="feat-top"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 17l6-6 4 4 8-8"/><path d="M21 7v5h-5"/></svg></span><h3 data-ar="توقيت رؤية 2030" data-en="Vision 2030 Timing">توقيت رؤية 2030</h3></div>
+        <p data-ar="في قلب سوقٍ تجاري هو الأنشط والأسرع نموّاً في المنطقة." data-en="At the heart of the region's most active and fastest-growing commercial market.">في قلب سوقٍ تجاري هو الأنشط والأسرع نموّاً في المنطقة.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LOCATION ============ -->
+<section id="location">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow" data-ar="موقعٌ على العصب المالي" data-en="A Financial-Corridor Location">موقعٌ على العصب المالي</span>
+      <h2 class="h2" data-ar="على الشريط التجاري، في قلب الحركة." data-en="On the commercial strip, at the heart of the movement.">على الشريط التجاري، في قلب الحركة.</h2>
+      <p class="lead" data-ar="يقع بالين بلو ميزون 2 في حي الصحافة على الشريط التجاري المحصور بين طريق الملك فهد وشارع العليا شمالاً وجنوباً، محاطاً بأهم المقارّ والمعالم المالية في الرياض." data-en="Baleine Bleu Maison 2 sits in Al Sahafah on the commercial strip between King Fahd Road and Olaya Street, north to south — surrounded by Riyadh's foremost corporate and financial landmarks.">يقع بالين بلو ميزون 2 في حي الصحافة على الشريط التجاري المحصور بين طريق الملك فهد وشارع العليا شمالاً وجنوباً، محاطاً بأهم المقارّ والمعالم المالية في الرياض.</p>
+      <div class="loc-chips">
+        <span class="loc-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 20l4-16M20 20l-4-16M10 20V4M14 20V4"/></svg><span data-ar="طريق الملك فهد وشارع العليا" data-en="King Fahd Rd & Olaya St">طريق الملك فهد وشارع العليا</span></span>
+        <span class="loc-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 21h18M5 21V8l7-4 7 4v13"/></svg><span data-ar="جوار كافد وبرج المملكة" data-en="By KAFD & Kingdom Centre">جوار كافد وبرج المملكة</span></span>
+        <span class="loc-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 17l6-6 4 4 8-8"/><path d="M21 7v5h-5"/></svg><span data-ar="العصب المالي للعاصمة" data-en="The capital's financial nerve">العصب المالي للعاصمة</span></span>
+      </div>
+    </div>
+    <div class="loc-grid">
+      <div class="loc-map reveal"><img src="assets/map.jpg" alt="موقع بالين بلو ميزون 2 في حي الصحافة بالرياض" loading="lazy" decoding="async" /></div>
+      <ul class="lm-list reveal">
+        <li><span class="lm-name"><span class="dot"></span><span data-ar="مترو الرياض" data-en="Riyadh Metro">مترو الرياض</span></span><span class="lm-time num-lat"><span data-ar="5 دقائق" data-en="5 min">5 دقائق</span></span></li>
+        <li><span class="lm-name"><span class="dot"></span><span data-ar="برج المملكة" data-en="Kingdom Centre">برج المملكة</span></span><span class="lm-time num-lat"><span data-ar="10 دقائق" data-en="10 min">10 دقائق</span></span></li>
+        <li><span class="lm-name"><span class="dot"></span><span data-ar="بوليفارد سيتي" data-en="Boulevard City">بوليفارد سيتي</span></span><span class="lm-time num-lat"><span data-ar="10 دقائق" data-en="10 min">10 دقائق</span></span></li>
+        <li><span class="lm-name"><span class="dot"></span><span data-ar="مركز الملك عبدالله المالي (كافد)" data-en="King Abdullah Financial District">مركز الملك عبدالله المالي (كافد)</span></span><span class="lm-time num-lat"><span data-ar="10 دقائق" data-en="10 min">10 دقائق</span></span></li>
+        <li><span class="lm-name"><span class="dot"></span><span data-ar="مطار الملك خالد الدولي" data-en="King Khalid Int'l Airport">مطار الملك خالد الدولي</span></span><span class="lm-time num-lat"><span data-ar="27 دقيقة" data-en="27 min">27 دقيقة</span></span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section id="gallery">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow" data-ar="المعرض" data-en="Gallery">المعرض</span>
+      <h2 class="h2" data-ar="لمحاتٌ من البرج." data-en="Glimpses of the tower.">لمحاتٌ من البرج.</h2>
+    </div>
+    <div class="gal-wrap reveal">
+      <div class="gal-slider" id="galSlider">
+        <div class="gal-track">
+          <div class="gal-slide"><img src="assets/hero.jpg" alt="واجهة برج بالين بلو ميزون 2" loading="lazy" decoding="async" draggable="false" /></div>
+          <div class="gal-slide"><img src="assets/tower-2.jpg" alt="البرج من الجانب على الشريط التجاري" loading="lazy" decoding="async" draggable="false" /></div>
+          <div class="gal-slide"><img src="assets/lobby.jpg" alt="بهو مزدوج الارتفاع بالرخام" loading="lazy" decoding="async" draggable="false" /></div>
+          <div class="gal-slide"><img src="assets/interior.jpg" alt="طابق مكتبي مفتوح بأرضية رخامية" loading="lazy" decoding="async" draggable="false" /></div>
+          <div class="gal-slide"><img src="assets/elevator.jpg" alt="ردهة المصاعد بالرخام" loading="lazy" decoding="async" draggable="false" /></div>
+          <div class="gal-slide"><img src="assets/rooftop-1.jpg" alt="تراس البرج العلوي بالأعمدة" loading="lazy" decoding="async" draggable="false" /></div>
+          <div class="gal-slide"><img src="assets/rooftop-2.jpg" alt="رواق زجاجي في الطابق العلوي" loading="lazy" decoding="async" draggable="false" /></div>
+          <div class="gal-slide"><img src="assets/plaza.jpg" alt="ساحة البرج وأفق حي الصحافة" loading="lazy" decoding="async" draggable="false" /></div>
+          <div class="gal-slide"><img src="assets/tower-1.jpg" alt="البرج كاملاً من الأمام" loading="lazy" decoding="async" draggable="false" /></div>
+          <div class="gal-slide"><img src="assets/corridor.jpg" alt="ممر علوي بإطلالة على المدينة" loading="lazy" decoding="async" draggable="false" /></div>
+        </div>
+      </div>
+      <button class="gal-nav prev" id="galPrev" type="button" aria-label="السابق"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <button class="gal-nav next" id="galNext" type="button" aria-label="التالي"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M9 5l7 7-7 7"/></svg></button>
+    </div>
+    <p class="gal-hint reveal">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="15" height="15"><path d="M4 12h16M8 8l-4 4 4 4M16 8l4 4-4 4"/></svg>
+      <span data-ar="اسحب بالماوس أو استخدم الأسهم لتصفّح الصور" data-en="Drag with the mouse or use the arrows to browse">اسحب بالماوس أو استخدم الأسهم لتصفّح الصور</span>
+    </p>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="sec-head contact-aside reveal" style="text-align:center;margin-inline:auto">
+      <span class="eyebrow" style="justify-content:center" data-ar="ابدأ هنا" data-en="Begin Here">ابدأ هنا</span>
+      <h2 class="h2" style="margin:1.3rem auto;max-width:24ch" data-ar="سجّل اهتمامك في بالين بلو ميزون 2." data-en="Register your interest in Baleine Bleu Maison 2.">سجّل اهتمامك في بالين بلو ميزون 2.</h2>
+      <p class="lead" style="margin-inline:auto" data-ar="اترك تفاصيلك وسيتواصل معك فريق نفوذ للاستثمار العقاري — المسوّق الحصري للبرج — لعرض المساحات المتاحة وشروط التأجير وترتيب زيارةٍ للموقع." data-en="Leave your details and the team at Nofodh Real Estate Investment — the tower's exclusive marketer — will walk you through available spaces, leasing terms and arrange a site visit.">اترك تفاصيلك وسيتواصل معك فريق نفوذ للاستثمار العقاري — المسوّق الحصري للبرج — لعرض المساحات المتاحة وشروط التأجير وترتيب زيارةٍ للموقع.</p>
+      <div class="contact-lines">
+        <a href="tel:920029555" dir="ltr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 005 5L15 13l5 2v4a1 1 0 01-1 1A16 16 0 014 5a1 1 0 011-1z"/></svg>920029555</a>
+        <a href="mailto:info@nofodh.sa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5L12 13l8.5-6.5"/></svg>info@nofodh.sa</a>
+        <a href="https://nofodh.sa" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.7 3.8 9S14.5 18.4 12 21c-2.5-2.6-3.8-5.7-3.8-9S9.5 5.6 12 3z"/></svg>www.nofodh.sa</a>
+      </div>
+    </div>
+
+    <div class="form-shell reveal">
+      <form id="leadForm" novalidate>
+        <div class="form-grid">
+          <div class="field">
+            <label data-ar="الاسم الكامل" data-en="Full name">الاسم الكامل</label>
+            <input type="text" name="name" required data-ar-ph="اكتب اسمك" data-en-ph="Your name" placeholder="اكتب اسمك" />
+          </div>
+          <div class="field">
+            <label data-ar="رقم الهاتف" data-en="Phone">رقم الهاتف</label>
+            <input type="tel" name="phone" required data-ar-ph="+966" data-en-ph="+966" placeholder="+966" />
+          </div>
+          <div class="field">
+            <label data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</label>
+            <input type="email" name="email" required data-ar-ph="name@email.com" data-en-ph="name@email.com" placeholder="name@email.com" />
+          </div>
+          <div class="field">
+            <label data-ar="المدينة" data-en="City">المدينة</label>
+            <input type="text" name="city" data-ar-ph="الرياض" data-en-ph="Riyadh" placeholder="الرياض" />
+          </div>
+          <div class="field">
+            <label data-ar="نوع المساحة" data-en="Space type">نوع المساحة</label>
+            <select name="space">
+              <option value="" data-ar="اختر النوع" data-en="Select type">اختر النوع</option>
+              <option value="retail" data-ar="معارض أرضية" data-en="Ground-floor retail">معارض أرضية</option>
+              <option value="office" data-ar="طوابق مكتبية" data-en="Office floors">طوابق مكتبية</option>
+              <option value="full-floor" data-ar="طابق كامل" data-en="Full floor">طابق كامل</option>
+              <option value="whole" data-ar="البرج بالكامل" data-en="Whole tower">البرج بالكامل</option>
+            </select>
+          </div>
+          <div class="field">
+            <label data-ar="الغرض" data-en="Purpose">الغرض</label>
+            <select name="purpose">
+              <option value="" data-ar="اختر الغرض" data-en="Select purpose">اختر الغرض</option>
+              <option value="lease" data-ar="تأجير للاستخدام" data-en="Lease to occupy">تأجير للاستخدام</option>
+              <option value="invest" data-ar="استثمار" data-en="Investment">استثمار</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label data-ar="رسالتك (اختياري)" data-en="Message (optional)">رسالتك (اختياري)</label>
+            <textarea name="message" data-ar-ph="أخبرنا بما تبحث عنه — المساحة، الدور، أو موعد الزيارة..." data-en-ph="Tell us what you're looking for — area, floor, or a visit time..." placeholder="أخبرنا بما تبحث عنه — المساحة، الدور، أو موعد الزيارة..."></textarea>
+          </div>
+        </div>
+        <div class="form-foot">
+          <p class="form-note" data-ar="بياناتك سرّية ولن تُستخدم إلا للتواصل بخصوص برج بالين بلو ميزون 2." data-en="Your details are confidential and used only to contact you about Baleine Bleu Maison 2.">بياناتك سرّية ولن تُستخدم إلا للتواصل بخصوص برج بالين بلو ميزون 2.</p>
+          <button type="submit" class="btn btn-primary" data-ar="أرسل الطلب" data-en="Send request">أرسل الطلب <span class="arr">→</span></button>
+        </div>
+      </form>
+
+      <div class="form-success" id="formSuccess">
+        <div class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4L19 6"/></svg></div>
+        <h3 data-ar="شكرًا لاهتمامك" data-en="Thank you">شكرًا لاهتمامك</h3>
+        <p data-ar="تم استلام طلبك. سيتواصل معك فريق نفوذ للاستثمار العقاري قريبًا." data-en="Your request has been received. The Nofodh team will be in touch shortly.">تم استلام طلبك. سيتواصل معك فريق نفوذ للاستثمار العقاري قريبًا.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ REGISTER MODAL ============ -->
+<div class="modal" id="regModal" aria-hidden="true">
+  <div class="modal-overlay" data-close></div>
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="regModalTitle">
+    <button class="modal-close" data-close aria-label="Close">&#10005;</button>
+    <div class="modal-head">
+      <span class="eyebrow" data-ar="سجّل اهتمامك" data-en="Register interest">سجّل اهتمامك</span>
+      <h3 id="regModalTitle" data-ar="احجز مساحتك في بالين بلو ميزون 2" data-en="Reserve your space at Baleine Bleu Maison 2">احجز مساحتك في بالين بلو ميزون 2</h3>
+      <p data-ar="اترك تفاصيلك وسيتواصل معك فريق نفوذ للاستثمار العقاري لعرض المساحات المتاحة وترتيب زيارة للموقع." data-en="Leave your details and the Nofodh team will present available spaces and arrange a site visit.">اترك تفاصيلك وسيتواصل معك فريق نفوذ للاستثمار العقاري لعرض المساحات المتاحة وترتيب زيارة للموقع.</p>
+    </div>
+    <form id="modalForm" novalidate>
+      <div class="form-grid">
+        <div class="field">
+          <label data-ar="الاسم الكامل" data-en="Full name">الاسم الكامل</label>
+          <input type="text" name="name" required data-ar-ph="اكتب اسمك" data-en-ph="Your name" placeholder="اكتب اسمك" />
+        </div>
+        <div class="field">
+          <label data-ar="رقم الهاتف" data-en="Phone">رقم الهاتف</label>
+          <input type="tel" name="phone" required data-ar-ph="+966" data-en-ph="+966" placeholder="+966" />
+        </div>
+        <div class="field">
+          <label data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</label>
+          <input type="email" name="email" required data-ar-ph="name@email.com" data-en-ph="name@email.com" placeholder="name@email.com" />
+        </div>
+        <div class="field">
+          <label data-ar="نوع المساحة" data-en="Space type">نوع المساحة</label>
+          <select name="space">
+            <option value="" data-ar="اختر النوع" data-en="Select type">اختر النوع</option>
+            <option value="retail" data-ar="معارض أرضية" data-en="Ground-floor retail">معارض أرضية</option>
+            <option value="office" data-ar="طوابق مكتبية" data-en="Office floors">طوابق مكتبية</option>
+            <option value="full-floor" data-ar="طابق كامل" data-en="Full floor">طابق كامل</option>
+            <option value="whole" data-ar="البرج بالكامل" data-en="Whole tower">البرج بالكامل</option>
+          </select>
+        </div>
+        <div class="field full">
+          <label data-ar="رسالتك (اختياري)" data-en="Message (optional)">رسالتك (اختياري)</label>
+          <textarea name="message" data-ar-ph="أخبرنا بما تبحث عنه..." data-en-ph="Tell us what you're looking for..." placeholder="أخبرنا بما تبحث عنه..."></textarea>
+        </div>
+      </div>
+      <div class="form-foot">
+        <p class="form-note" data-ar="بياناتك سرّية ولن تُستخدم إلا للتواصل بخصوص برج بالين بلو ميزون 2." data-en="Your details are confidential and used only to contact you about Baleine Bleu Maison 2.">بياناتك سرّية ولن تُستخدم إلا للتواصل بخصوص برج بالين بلو ميزون 2.</p>
+        <button type="submit" class="btn btn-primary" data-ar="أرسل الطلب" data-en="Send request">أرسل الطلب <span class="arr">→</span></button>
+      </div>
+    </form>
+    <div class="form-success" id="modalSuccess">
+      <div class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4L19 6"/></svg></div>
+      <h3 data-ar="شكرًا لاهتمامك" data-en="Thank you">شكرًا لاهتمامك</h3>
+      <p data-ar="تم استلام طلبك. سيتواصل معك فريق نفوذ للاستثمار العقاري قريبًا." data-en="Your request has been received. The Nofodh team will be in touch shortly.">تم استلام طلبك. سيتواصل معك فريق نفوذ للاستثمار العقاري قريبًا.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ============ FLOATING ACTIONS ============ -->
+<a class="wa-float" href="https://wa.me/966920029555" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15s-.77.96-.94 1.16c-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.65-2.05-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35z"/><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5.05-1.32A10 10 0 1012 2zm0 18.2a8.2 8.2 0 01-4.18-1.15l-.3-.18-3 .78.8-2.92-.2-.3A8.2 8.2 0 1112 20.2z"/></svg>
+</a>
+<button class="to-top" id="toTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="#top" class="foot-logo"><img id="footLogo" src="assets/logo-white.png" alt="بالين بلو ميزون 2" /></a>
+        <p data-ar="برجٌ تجاري من 25 طابقاً في حي الصحافة بالرياض — 14,365 م² مساحة قابلة للتأجير و322 موقفاً، بواجهةٍ مباشرة على العصب المالي للعاصمة." data-en="A 25-floor commercial tower in Al Sahafah, Riyadh — 14,365 m² of leasable space and 322 parking spots, with a direct frontage on the capital's financial nerve.">برجٌ تجاري من 25 طابقاً في حي الصحافة بالرياض — 14,365 م² مساحة قابلة للتأجير و322 موقفاً، بواجهةٍ مباشرة على العصب المالي للعاصمة.</p>
+        <div class="socials">
+          <a href="https://x.com/Nofodh_ksa" target="_blank" rel="noopener" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.3 8.3L23 22h-6.6l-5.2-6.8L5.3 22H2l7.8-8.9L1.6 2h6.8l4.7 6.2L18.9 2zm-2.3 18h1.8L7.5 3.8H5.6L16.6 20z"/></svg></a>
+          <a href="https://wa.me/966920029555" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 11.5a8.5 8.5 0 01-12.5 7.5L3 21l2-5.5A8.5 8.5 0 1121 11.5z"/><path d="M8.5 9.5c0 3 2 5 5 5"/></svg></a>
+          <a href="https://nofodh.sa" target="_blank" rel="noopener" aria-label="Website"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.7 3.8 9S14.5 18.4 12 21c-2.5-2.6-3.8-5.7-3.8-9S9.5 5.6 12 3z"/></svg></a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h5 data-ar="روابط" data-en="Explore">روابط</h5>
+        <ul>
+          <li><a href="#concept" data-ar="الرياض" data-en="Riyadh">الرياض</a></li>
+          <li><a href="#offerings" data-ar="المكوّنات" data-en="Composition">المكوّنات</a></li>
+          <li><a href="#plan" data-ar="المخططات" data-en="Plans">المخططات</a></li>
+          <li><a href="#services" data-ar="المواصفات" data-en="Specs">المواصفات</a></li>
+          <li><a href="#location" data-ar="الموقع" data-en="Location">الموقع</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5 data-ar="تواصل" data-en="Contact">تواصل</h5>
+        <ul>
+          <li data-ar="حي الصحافة، الرياض، المملكة العربية السعودية" data-en="Al Sahafah District, Riyadh, Kingdom of Saudi Arabia">حي الصحافة، الرياض، المملكة العربية السعودية</li>
+          <li><a href="tel:920029555" dir="ltr">920029555</a></li>
+          <li><a href="mailto:info@nofodh.sa">info@nofodh.sa</a></li>
+          <li><a href="https://nofodh.sa" target="_blank" rel="noopener">nofodh.sa</a></li>
+        </ul>
+        <p class="foot-agent">
+          <span data-ar="المسوّق الحصري:" data-en="Exclusive marketer:">المسوّق الحصري:</span> <b data-ar="نفوذ للاستثمار العقاري" data-en="Nofodh Real Estate Investment">نفوذ للاستثمار العقاري</b><br>
+          <span data-ar="المالك: مجموعة موسى بن عبدالعزيز الموسى وأولاده العقارية القابضة" data-en="Owner: Mosa bin Abdulaziz Al Mosa and Sons Real Estate Holding Group">المالك: مجموعة موسى بن عبدالعزيز الموسى وأولاده العقارية القابضة</span>
+        </p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p data-ar="© 2026 بالين بلو ميزون 2. جميع الحقوق محفوظة." data-en="© 2026 Baleine Bleu Maison 2. All rights reserved.">© 2026 بالين بلو ميزون 2. جميع الحقوق محفوظة.</p>
+      <p data-ar="ليس قريباً من الحركة، بل جزءٌ منها" data-en="Not near the movement — part of it">ليس قريباً من الحركة، بل جزءٌ منها</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var html=document.documentElement, body=document.body;
+  var LANG='ar';
+
+  /* ---------- LOADER ---------- */
+  window.addEventListener('load',function(){
+    setTimeout(function(){
+      document.getElementById('loader').classList.add('done');
+      body.classList.remove('lock');
+    },2100);
+  });
+
+  /* ---------- LANGUAGE ---------- */
+  function applyLang(lang){
+    LANG=lang;
+    html.lang=lang; html.dir=(lang==='ar')?'rtl':'ltr';
+    body.classList.toggle('lang-ar',lang==='ar');
+    body.classList.toggle('lang-en',lang==='en');
+    document.querySelectorAll('[data-ar]').forEach(function(el){
+      var v=el.getAttribute('data-'+lang);
+      if(v!==null) el.innerHTML=v;
+    });
+    document.querySelectorAll('[data-ar-ph]').forEach(function(el){
+      var v=el.getAttribute('data-'+lang+'-ph');
+      if(v!==null) el.setAttribute('placeholder',v);
+    });
+    updateLogos();
+    refreshPlanCaption();
+    try{localStorage.setItem('bb2-lang',lang);}catch(e){}
+  }
+  function updateLogos(){
+    var white='assets/logo-white.png';
+    var navy='assets/logo-navy.png';
+    var theme=html.getAttribute('data-theme');
+    var nav=document.getElementById('navLogo'); if(nav) nav.src=white;   /* header stays dark */
+    var ld=document.getElementById('loaderLogo'); if(ld) ld.src=white;   /* loader stays navy */
+    var ft=document.getElementById('footLogo'); if(ft) ft.src=(theme==='light')?navy:white;
+  }
+  document.getElementById('langBtn').addEventListener('click',function(){
+    applyLang(LANG==='ar'?'en':'ar');
+  });
+
+  /* ---------- THEME (dark / light) ---------- */
+  function applyTheme(theme){
+    html.setAttribute('data-theme',theme);
+    updateLogos();
+    try{localStorage.setItem('bb2-theme',theme);}catch(e){}
+  }
+  document.getElementById('themeBtn').addEventListener('click',function(){
+    applyTheme(html.getAttribute('data-theme')==='light'?'dark':'light');
+  });
+  /* dark is the default; only a stored 'light' flips it */
+  try{var st=localStorage.getItem('bb2-theme'); if(st==='light') applyTheme('light');}catch(e){}
+  try{var saved=localStorage.getItem('bb2-lang'); if(saved&&saved!=='ar') applyLang(saved);}catch(e){}
+  updateLogos();
+
+  /* ---------- HEADER SCROLL ---------- */
+  var header=document.getElementById('header');
+  var onScroll=function(){ header.classList.toggle('scrolled',window.scrollY>40); };
+  onScroll(); window.addEventListener('scroll',onScroll,{passive:true});
+
+  /* ---------- MOBILE MENU ---------- */
+  var burger=document.getElementById('burger'), mMenu=document.getElementById('mMenu');
+  function closeMenu(){burger.classList.remove('open');mMenu.classList.remove('open');body.classList.remove('lock');}
+  burger.addEventListener('click',function(){
+    var open=burger.classList.toggle('open');
+    mMenu.classList.toggle('open',open);
+    body.classList.toggle('lock',open);
+  });
+  mMenu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',closeMenu);});
+
+  /* ---------- REVEAL ---------- */
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  },{threshold:.16});
+  document.querySelectorAll('.reveal').forEach(function(el,i){
+    el.style.transitionDelay=(Math.min(i%4,3)*0.08)+'s';
+    io.observe(el);
+  });
+
+  /* ---------- FORMS (in-page + modal) ---------- */
+  function wireForm(form, success, opts){
+    if(!form||!success) return;
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      if(!form.checkValidity()){ form.reportValidity(); return; }
+      /* TODO: wire to backend / Formspree — e.g. fetch('https://formspree.io/f/XXXX',{method:'POST',body:new FormData(form)}) */
+      form.style.display='none';
+      success.classList.add('show');
+      if(opts&&opts.scroll){ var t=document.getElementById('contact'); if(t) t.scrollIntoView({behavior:'smooth',block:'center'}); }
+    });
+  }
+  wireForm(document.getElementById('leadForm'), document.getElementById('formSuccess'), {scroll:true});
+  wireForm(document.getElementById('modalForm'), document.getElementById('modalSuccess'), {scroll:false});
+
+  /* ---------- REGISTER MODAL ---------- */
+  var regModal=document.getElementById('regModal');
+  function openModal(){
+    if(mMenu.classList.contains('open')) closeMenu();
+    regModal.classList.add('open');
+    regModal.setAttribute('aria-hidden','false');
+    body.classList.add('lock');
+    var first=regModal.querySelector('input,select,textarea');
+    setTimeout(function(){ if(first) first.focus(); },140);
+  }
+  function closeModal(){
+    regModal.classList.remove('open');
+    regModal.setAttribute('aria-hidden','true');
+    body.classList.remove('lock');
+  }
+  document.querySelectorAll('[data-open-modal]').forEach(function(el){
+    el.addEventListener('click',function(e){ e.preventDefault(); openModal(); });
+  });
+  regModal.querySelectorAll('[data-close]').forEach(function(el){ el.addEventListener('click',closeModal); });
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape'&&regModal.classList.contains('open')) closeModal();
+  });
+
+  /* ---------- BACK TO TOP ---------- */
+  var toTop=document.getElementById('toTop');
+  var onScrollTop=function(){ toTop.classList.toggle('show', window.scrollY>520); };
+  onScrollTop(); window.addEventListener('scroll',onScrollTop,{passive:true});
+  toTop.addEventListener('click',function(){ window.scrollTo({top:0,behavior:'smooth'}); });
+
+  /* ---------- GALLERY: drag + arrows ---------- */
+  var gs=document.getElementById('galSlider');
+  if(gs){
+    var prev=document.getElementById('galPrev'), next=document.getElementById('galNext');
+    var down=false, startX=0, startLeft=0, moved=0;
+    gs.addEventListener('pointerdown',function(e){
+      if(e.button!==0&&e.pointerType==='mouse') return;
+      down=true; moved=0; startX=e.clientX; startLeft=gs.scrollLeft;
+      gs.classList.add('dragging');
+    });
+    gs.addEventListener('pointermove',function(e){
+      if(!down) return;
+      var d=e.clientX-startX;
+      if(Math.abs(d)>moved) moved=Math.abs(d);
+      if(moved>4&&gs.hasPointerCapture&&!gs.hasPointerCapture(e.pointerId)) gs.setPointerCapture(e.pointerId);
+      gs.scrollLeft=startLeft-d;
+    });
+    ['pointerup','pointercancel','pointerleave'].forEach(function(ev){
+      gs.addEventListener(ev,function(){ down=false; gs.classList.remove('dragging'); });
+    });
+    gs.addEventListener('click',function(e){ if(moved>6){ e.preventDefault(); e.stopPropagation(); } },true);
+    function slideStep(){
+      var s=gs.querySelector('.gal-slide');
+      return s ? s.getBoundingClientRect().width+16 : 300;
+    }
+    function syncArrows(){
+      var max=gs.scrollWidth-gs.clientWidth-2;
+      if(prev) prev.disabled=gs.scrollLeft<=2;
+      if(next) next.disabled=gs.scrollLeft>=max;
+    }
+    if(prev) prev.addEventListener('click',function(){ gs.scrollBy({left:-slideStep(),behavior:'smooth'}); });
+    if(next) next.addEventListener('click',function(){ gs.scrollBy({left:slideStep(),behavior:'smooth'}); });
+    gs.addEventListener('scroll',syncArrows,{passive:true});
+    window.addEventListener('resize',syncArrows);
+    syncArrows();
+  }
+
+  /* ---------- PLAN VIEWER ---------- */
+  var plans=[
+    {key:'ground', img:'assets/plan-ground.jpg',
+      t:{ar:'الدور الأرضي',en:'Ground Floor'},
+      m:{ar:'استقبال ومعارض تجارية · مواقف زوّار',en:'Reception & commercial showrooms · visitor parking'}},
+    {key:'basement', img:'assets/plan-basement.jpg',
+      t:{ar:'القبو والمواقف',en:'Basement & Parking'},
+      m:{ar:'أدوار المواقف تحت الأرض · 322 موقفاً',en:'Underground parking levels · 322 spots'}},
+    {key:'typical', img:'assets/plan-typical.jpg',
+      t:{ar:'الطابق المكتبي',en:'Office Floor'},
+      m:{ar:'طابق مكتبي نموذجي بلا أعمدة داخلية',en:'A typical column-free office floor'}},
+    {key:'elevations', img:'assets/plan-elevations.jpg',
+      t:{ar:'الواجهات',en:'Elevations'},
+      m:{ar:'واجهات المبنى الشمالية والجنوبية',en:'North and south building elevations'}}
+  ];
+  var planTabsLabel={ground:{ar:'الأرضي',en:'Ground'},basement:{ar:'القبو',en:'Basement'},typical:{ar:'الطابق المكتبي',en:'Office'},elevations:{ar:'الواجهات',en:'Elevations'}};
+  var activePlan=0;
+  var pTabs=document.getElementById('planTabs');
+  function refreshPlanCaption(){
+    var p=plans[activePlan];
+    var title=document.getElementById('planTitle'), meta=document.getElementById('planMeta'), full=document.getElementById('planFull');
+    if(title) title.textContent=p.t[LANG];
+    if(meta) meta.textContent=p.m[LANG];
+    if(full) full.href=p.img;
+    if(pTabs){ pTabs.querySelectorAll('.plan-tab').forEach(function(b){
+      var k=b.getAttribute('data-plan'); b.textContent=planTabsLabel[k][LANG];
+    });}
+  }
+  if(pTabs){
+    plans.forEach(function(p,idx){
+      var b=document.createElement('button');
+      b.className='plan-tab'+(idx===activePlan?' active':'');
+      b.type='button'; b.setAttribute('data-plan',p.key);
+      b.textContent=planTabsLabel[p.key][LANG];
+      pTabs.appendChild(b);
+    });
+    pTabs.addEventListener('click',function(e){
+      var btn=e.target.closest('.plan-tab'); if(!btn) return;
+      var key=btn.getAttribute('data-plan');
+      activePlan=plans.findIndex(function(p){return p.key===key;});
+      pTabs.querySelectorAll('.plan-tab').forEach(function(t){t.classList.toggle('active',t===btn);});
+      var img=document.getElementById('planImg');
+      img.src=plans[activePlan].img; img.alt=plans[activePlan].t.ar;
+      refreshPlanCaption();
+    });
+  }
+  refreshPlanCaption();
+})();
+</script>
+</body>
+</html>
