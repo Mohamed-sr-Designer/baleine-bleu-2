@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl" data-theme="dark">
+<html lang="ar" dir="rtl" data-theme="light">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>بالين بلو ميزون 2 · حي الصحافة، الرياض | Baleine Bleu Maison 2</title>
-<meta name="description" content="بالين بلو ميزون 2 — برج تجاري من 25 طابقاً على الشريط التجاري في حي الصحافة بالرياض، بمساحة قابلة للتأجير 14,365 م² و322 موقفاً وواجهة مباشرة على العصب المالي للعاصمة. التسويق الحصري عبر نفوذ للاستثمار العقاري. Baleine Bleu Maison 2 — a 25-floor commercial tower on the financial corridor in Al Sahafah, Riyadh." />
+<title>بالن بلو 2 · حي الصحافة، الرياض | Baleine Bleu 2</title>
+<meta name="description" content="بالن بلو 2 — برج تجاري من 25 طابقاً على الشريط التجاري في حي الصحافة بالرياض، بـ322 موقفاً تحت الأرض في قلب العصب المالي للعاصمة. التسويق الحصري عبر نفوذ للاستثمار العقاري. Baleine Bleu 2 — a 25-floor commercial tower on the commercial strip in Al Sahafah, Riyadh, with 322 underground parking spots at the heart of the capital's financial nerve." />
 <link rel="icon" href="assets/mark-navy.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -60,13 +60,13 @@
 [data-theme="light"]{
   --cream:#122a6e;
   --cream-dim:#33477f;
-  --stone:#68789e;
+  --stone:#4e5e85;
   --stone-2:#51628a;
   --teal:#3550ad;
   --teal-soft:#3550ad;
   --teal-2:#26398a;
-  --gold:#9d7e40;
-  --acc:#9d7e40;
+  --gold:#7a5f26;
+  --acc:#7a5f26;
   --acc-2:#3550ad;
   --glass:rgba(255,255,255,.6);
   --glass-2:rgba(255,255,255,.85);
@@ -264,7 +264,7 @@ header.scrolled .nav-logo img{height:34px}
 .lang-ar .hsb-v{font-weight:600}
 
 /* ============ section heading block ============ */
-.sec-head{max-width:72ch;margin-bottom:clamp(1.8rem,3.4vw,2.8rem)}
+.sec-head{max-width:none;text-align:center;margin-bottom:clamp(1.8rem,3.4vw,2.8rem)}
 .sec-head .h2{margin:1.3rem 0 1.3rem}
 
 /* ============ CONCEPT ============ */
@@ -272,7 +272,7 @@ header.scrolled .nav-logo img{height:34px}
 .concept .wrap{overflow:hidden}
 .concept .sec-head{margin-inline:auto;text-align:center}
 .concept .eyebrow{justify-content:center}
-.concept .h2{font-size:clamp(2rem,4.6vw,3.5rem);max-width:20ch;margin-inline:auto}
+.concept .h2{font-size:clamp(2rem,4.6vw,3.5rem);margin-inline:auto}
 .concept .lead{margin-inline:auto;text-align:center;margin-top:1.8rem}
 .concept-motif{margin-top:2.6rem;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--hair);
   border:1px solid var(--hair);border-radius:20px;overflow:hidden}
@@ -297,7 +297,7 @@ header.scrolled .nav-logo img{height:34px}
 .mix-table{border-radius:18px;overflow:hidden;border:1px solid var(--glass-brd);background:var(--cell-bg)}
 .mix-table table{width:100%;border-collapse:collapse;font-variant-numeric:lining-nums tabular-nums}
 .mix-table th,.mix-table td{padding:.95rem 1.1rem;text-align:start;font-size:.98rem}
-.mix-table thead th{background:var(--navy-deep);color:var(--cream);font-weight:600;font-family:var(--font-display)}
+.mix-table thead th{background:var(--navy-deep);color:#eef2fb;font-weight:600;font-family:var(--font-display)}
 [data-theme="light"] .mix-table thead th{background:var(--navy)}
 .mix-table tbody td{color:var(--cream-dim);border-top:1px solid var(--hair)}
 .mix-table tbody tr:nth-child(even) td{background:rgba(255,255,255,.02)}
@@ -384,7 +384,7 @@ header.scrolled .nav-logo img{height:34px}
 .lm-time{color:var(--acc-2);font-size:.92rem;white-space:nowrap;font-weight:500}
 .lm-time .km{color:var(--stone);font-weight:400}
 .loc-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:clamp(2rem,4vw,3.5rem);align-items:stretch;margin-top:clamp(1.6rem,3vw,2.4rem)}
-.loc-map{border-radius:20px;overflow:hidden;border:1px solid var(--glass-brd);box-shadow:0 18px 48px -36px rgba(0,0,0,.5);min-height:360px;background:#fff}
+.loc-map{position:relative;border-radius:20px;overflow:hidden;border:1px solid var(--glass-brd);box-shadow:0 18px 48px -36px rgba(0,0,0,.5);min-height:360px;background:#fff}
 .loc-map img{width:100%;height:100%;object-fit:cover;display:block}
 
 /* ============ GALLERY ============ */
@@ -449,10 +449,6 @@ header.scrolled .nav-logo img{height:34px}
 .form-success h3{font-size:1.8rem;margin-bottom:.6rem}
 .form-success p{color:var(--stone-2)}
 .contact-aside{margin-bottom:clamp(1.6rem,3vw,2.4rem)}
-.contact-lines{display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem 1.6rem;margin-top:1.4rem}
-.contact-lines a{display:inline-flex;align-items:center;gap:.5rem;color:var(--cream-dim);font-size:1rem;transition:.3s}
-.contact-lines a:hover{color:var(--acc)}
-.contact-lines svg{width:16px;height:16px;color:var(--acc)}
 
 /* ============ FOOTER ============ */
 footer{border-top:1px solid var(--hair);padding-block:clamp(3rem,6vw,5rem) 2rem;background:var(--footer-bg)}
@@ -518,6 +514,46 @@ footer{border-top:1px solid var(--hair);padding-block:clamp(3rem,6vw,5rem) 2rem;
 .reveal{opacity:0;transform:translateY(30px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
 .reveal.in{opacity:1;transform:none}
 
+/* ============ CENTERED HEADS / SINGLE-LINE H2 ============ */
+.h2{white-space:nowrap}
+.sec-head .eyebrow{justify-content:center}
+.sec-head .lead,.sec-head .feat2-sub{margin-inline:auto;text-align:center}
+.loc-chips{justify-content:center}
+#services .split-inner{text-align:center}
+#services .split-inner .eyebrow{justify-content:center}
+#services .split-inner .lead{margin-inline:auto}
+#services .svc{text-align:start}
+.plan-frame{position:relative}
+.plan-frame .plan-view{margin-top:1.5rem}
+.plan-frame .zoom-btn{top:2.2rem}
+
+/* ============ ZOOM BUTTON + LIGHTBOX ============ */
+.gal-slide,.split-media,.loc-map,.plan-frame{cursor:zoom-in}
+.zoom-btn{position:absolute;top:.7rem;inset-inline-end:.7rem;z-index:5;width:38px;height:38px;border-radius:50%;
+  display:grid;place-items:center;border:1px solid rgba(255,255,255,.35);background:rgba(10,24,70,.64);color:#fff;
+  backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);cursor:zoom-in;transition:.3s var(--ease)}
+.zoom-btn:hover{background:var(--btn-fill);color:var(--btn-ink);border-color:transparent}
+.zoom-btn svg{width:18px;height:18px}
+.lb{position:fixed;inset:0;z-index:300;display:flex;align-items:center;justify-content:center;direction:ltr;
+  opacity:0;visibility:hidden;transition:opacity .35s var(--ease),visibility .35s var(--ease)}
+.lb.open{opacity:1;visibility:visible}
+.lb-bg{position:absolute;inset:0;background:rgba(5,12,34,.92);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.lb-stage{position:relative;max-width:94vw;max-height:84vh;overflow:auto;border-radius:14px;display:grid;place-items:center;
+  scrollbar-width:thin}
+.lb-stage img{display:block;max-width:92vw;max-height:82vh;width:auto;height:auto;object-fit:contain;border-radius:12px;
+  cursor:zoom-in;user-select:none;-webkit-user-drag:none;background:#fff0}
+.lb.zoomed .lb-stage img{max-width:none;max-height:none;width:190vw;cursor:zoom-out}
+.lb-x,.lb-nav{position:absolute;z-index:3;width:46px;height:46px;border-radius:50%;display:grid;place-items:center;
+  border:1px solid rgba(255,255,255,.3);background:rgba(10,24,70,.7);color:#fff;font-size:1.5rem;line-height:1;transition:.3s var(--ease)}
+.lb-x{top:1.1rem;right:1.1rem;font-size:1.1rem}
+.lb-nav{top:50%;transform:translateY(-50%)}
+.lb-prev{left:1rem}
+.lb-next{right:1rem}
+.lb-x:hover,.lb-nav:hover{background:#c9a86a;color:#0b1746;border-color:transparent}
+.lb-cap{position:absolute;bottom:1.1rem;inset-inline:0;text-align:center;color:#dfe6f7;font-size:.95rem;padding-inline:4rem;
+  font-family:var(--font-body)}
+@media(max-width:560px){.lb-nav{width:40px;height:40px}.lb-prev{left:.4rem}.lb-next{right:.4rem}.lb-cap{padding-inline:3.2rem;font-size:.85rem}}
+
 /* ============ RESPONSIVE ============ */
 @media(max-width:1080px){
   .nav-links{gap:.9rem}
@@ -564,7 +600,7 @@ footer{border-top:1px solid var(--hair);padding-block:clamp(3rem,6vw,5rem) 2rem;
 <div id="loader">
   <span class="bloom" aria-hidden="true"></span>
   <div class="loader-inner">
-    <img id="loaderLogo" src="assets/logo-white.png" alt="بالين بلو ميزون 2" />
+    <img id="loaderLogo" src="assets/logo-white.png" alt="بالن بلو 2" />
     <div class="loader-bar"><i></i></div>
     <div class="loader-tag" data-ar="ليس قريباً من الحركة، بل جزءٌ منها" data-en="Not near the movement — part of it">ليس قريباً من الحركة، بل جزءٌ منها</div>
   </div>
@@ -573,7 +609,7 @@ footer{border-top:1px solid var(--hair);padding-block:clamp(3rem,6vw,5rem) 2rem;
 <!-- ============ HEADER ============ -->
 <header id="header">
   <div class="wrap nav">
-    <a href="#top" class="nav-logo"><img id="navLogo" src="assets/logo-white.png" alt="بالين بلو ميزون 2" /></a>
+    <a href="#top" class="nav-logo"><img id="navLogo" src="assets/logo-white.png" alt="بالن بلو 2" /></a>
     <nav>
       <ul class="nav-links">
         <li><a href="#concept" data-ar="الرياض" data-en="Riyadh">الرياض</a></li>
@@ -612,12 +648,12 @@ footer{border-top:1px solid var(--hair);padding-block:clamp(3rem,6vw,5rem) 2rem;
 <!-- ============ HERO ============ -->
 <section class="hero" id="hero">
   <div class="hero-bg">
-    <img src="assets/hero.jpg" alt="برج بالين بلو ميزون 2 في حي الصحافة بالرياض" />
+    <img src="assets/hero.jpg" alt="برج بالن بلو 2 في حي الصحافة بالرياض" />
   </div>
   <div class="wrap hero-inner">
     <span class="eyebrow" data-ar="المملكة العربية السعودية · حي الصحافة، الرياض" data-en="Al Sahafah District · Riyadh, KSA">المملكة العربية السعودية · حي الصحافة، الرياض</span>
     <h1 class="display" data-ar="ليس قريباً من الحركة،<br><span class=&quot;accent&quot;>بل جزءٌ</span> منها" data-en="Not near the movement,<br><span class=&quot;accent&quot;>it is</span> part of it">ليس قريباً من الحركة،<br><span class="accent">بل جزءٌ</span> منها</h1>
-    <p class="lead" data-ar="بالين بلو ميزون 2 — برجٌ تجاري من 25 طابقاً على الشريط التجاري في حي الصحافة بالرياض، بمساحةٍ قابلة للتأجير 14,365 م² و322 موقفاً، وواجهةٍ مباشرة على العصب المالي للعاصمة." data-en="Baleine Bleu Maison 2 — a 25-floor commercial tower on the commercial strip in Al Sahafah, Riyadh: 14,365 m² of leasable space, 322 parking spots, and a direct frontage on the capital's financial nerve.">بالين بلو ميزون 2 — برجٌ تجاري من 25 طابقاً على الشريط التجاري في حي الصحافة بالرياض، بمساحةٍ قابلة للتأجير 14,365 م² و322 موقفاً، وواجهةٍ مباشرة على العصب المالي للعاصمة.</p>
+    <p class="lead" data-ar="بالن بلو 2 — برجٌ تجاري من 25 طابقاً على الشريط التجاري في حي الصحافة بالرياض، بـ322 موقفاً تحت الأرض، في قلب العصب المالي للعاصمة." data-en="Baleine Bleu 2 — a 25-floor commercial tower on the commercial strip in Al Sahafah, Riyadh, with 322 underground parking spots, at the heart of the capital's financial nerve.">بالن بلو 2 — برجٌ تجاري من 25 طابقاً على الشريط التجاري في حي الصحافة بالرياض، بـ322 موقفاً تحت الأرض، في قلب العصب المالي للعاصمة.</p>
     <div class="hero-ctas">
       <a href="#contact" data-open-modal class="btn btn-primary" data-ar="سجّل اهتمامك" data-en="Register interest">سجّل اهتمامك</a>
       <a href="#plan" class="btn btn-ghost" data-ar="استعرض المخططات" data-en="Explore the plans">استعرض المخططات <span class="arr">→</span></a>
@@ -625,10 +661,8 @@ footer{border-top:1px solid var(--hair);padding-block:clamp(3rem,6vw,5rem) 2rem;
     <div class="hero-specbar reveal">
       <div class="hsb"><span class="hsb-k" data-ar="الموقع" data-en="Location">الموقع</span><span class="hsb-v" data-ar="حي الصحافة · الرياض" data-en="Al Sahafah · Riyadh">حي الصحافة · الرياض</span></div>
       <div class="hsb"><span class="hsb-k" data-ar="الطوابق" data-en="Floors">الطوابق</span><span class="hsb-v num-lat">25</span></div>
-      <div class="hsb"><span class="hsb-k" data-ar="مساحة تأجيرية" data-en="Leasable">مساحة تأجيرية</span><span class="hsb-v num-lat">14,365 <span data-ar="م²" data-en="m²">م²</span></span></div>
       <div class="hsb"><span class="hsb-k" data-ar="المواقف" data-en="Parking">المواقف</span><span class="hsb-v num-lat">322</span></div>
-      <div class="hsb"><span class="hsb-k" data-ar="المصاعد" data-en="Elevators">المصاعد</span><span class="hsb-v" data-ar="4 كوني" data-en="4 Kone">4 كوني</span></div>
-      <div class="hsb"><span class="hsb-k" data-ar="الواجهة" data-en="Frontage">الواجهة</span><span class="hsb-v" data-ar="تجارية مباشرة" data-en="Direct commercial">تجارية مباشرة</span></div>
+      <div class="hsb"><span class="hsb-k" data-ar="التكييف" data-en="HVAC">التكييف</span><span class="hsb-v">VRV Trane</span></div>
     </div>
   </div>
 </section>
@@ -673,15 +707,15 @@ footer{border-top:1px solid var(--hair);padding-block:clamp(3rem,6vw,5rem) 2rem;
 <!-- ============ OFFERINGS / COMPOSITION ============ -->
 <section id="offerings">
   <div class="wrap">
-    <div class="sec-head reveal" style="text-align:center;margin-inline:auto">
-      <span class="eyebrow" style="justify-content:center" data-ar="المكوّنات" data-en="Composition">المكوّنات</span>
-      <h2 class="h2" style="margin:1.3rem auto;max-width:24ch" data-ar="برجٌ مكتمل، من القبو إلى القمة." data-en="A complete tower, basement to crown.">برجٌ مكتمل، من القبو إلى القمة.</h2>
-      <p class="lead" style="margin-inline:auto" data-ar="خمسة وعشرون طابقاً — خمسة أدوار قبو ومواقف، وأرضيٌّ تجاري باستقبالٍ ومعارض، وعشرون طابقاً مكتبياً بإضاءةٍ طبيعية من الجهات الأربع وبلا أعمدة داخلية." data-en="Twenty-five floors — five basement and parking levels, a commercial ground floor with reception and showrooms, and twenty office floors with natural light on four sides and no internal columns.">خمسة وعشرون طابقاً — خمسة أدوار قبو ومواقف، وأرضيٌّ تجاري باستقبالٍ ومعارض، وعشرون طابقاً مكتبياً بإضاءةٍ طبيعية من الجهات الأربع وبلا أعمدة داخلية.</p>
+    <div class="sec-head reveal">
+      <span class="eyebrow" data-ar="المكوّنات" data-en="Composition">المكوّنات</span>
+      <h2 class="h2" data-ar="تكوين البرج، من القبو إلى القمة." data-en="The tower's composition, basement to crown.">تكوين البرج، من القبو إلى القمة.</h2>
+      <p class="lead" data-ar="خمسة أدوار قبو ومواقف، ودورٌ أرضي باستقبال، وأدوارٌ مكتبية بإضاءةٍ طبيعية من الجهات الأربع وبلا أعمدة داخلية." data-en="Five basement and parking levels, a ground floor with reception, and office floors with natural light on four sides and no internal columns.">خمسة أدوار قبو ومواقف، ودورٌ أرضي باستقبال، وأدوارٌ مكتبية بإضاءةٍ طبيعية من الجهات الأربع وبلا أعمدة داخلية.</p>
     </div>
     <div class="mix-grid">
       <div class="mix-stats reveal">
-        <div class="mstat teal"><div class="n num-lat">25</div><div class="k" data-ar="طابقاً · 5 قبو + 20 فوق الأرض" data-en="floors · 5 basement + 20 above ground">طابقاً · 5 قبو + 20 فوق الأرض</div></div>
-        <div class="mstat"><div class="n num-lat">14,365 <span style="font-size:1.2rem" data-ar="م²" data-en="m²">م²</span></div><div class="k" data-ar="مساحة قابلة للتأجير" data-en="leasable built-up area">مساحة قابلة للتأجير</div></div>
+        <div class="mstat teal"><div class="n num-lat">25</div><div class="k" data-ar="طابقاً في المجمل" data-en="floors in total">طابقاً في المجمل</div></div>
+        <div class="mstat"><div class="n num-lat">20</div><div class="k" data-ar="طابقاً فوق الأرض" data-en="floors above ground">طابقاً فوق الأرض</div></div>
         <div class="mstat teal"><div class="n num-lat">322</div><div class="k" data-ar="موقف سيارات في القبو" data-en="underground parking spots">موقف سيارات في القبو</div></div>
       </div>
       <div class="mix-table reveal">
@@ -696,28 +730,28 @@ footer{border-top:1px solid var(--hair);padding-block:clamp(3rem,6vw,5rem) 2rem;
             <tr><td><span data-ar="الطوابق" data-en="Floors">الطوابق</span></td><td><span data-ar="25 (5 قبو + 20 فوق الأرض)" data-en="25 (5 basement + 20 above)">25 (5 قبو + 20 فوق الأرض)</span></td></tr>
             <tr><td><span data-ar="مساحة الأرض" data-en="Land area">مساحة الأرض</span></td><td>2,500 <span data-ar="م²" data-en="m²">م²</span></td></tr>
             <tr><td><span data-ar="إجمالي البناء" data-en="Total built-up">إجمالي البناء</span></td><td>26,865.7 <span data-ar="م²" data-en="m²">م²</span></td></tr>
-            <tr><td><span data-ar="قابلة للتأجير" data-en="Leasable">قابلة للتأجير</span></td><td>14,365.7 <span data-ar="م²" data-en="m²">م²</span></td></tr>
+            <tr><td><span data-ar="ارتداد خلفي" data-en="Rear setback">ارتداد خلفي</span></td><td>27 <span data-ar="م" data-en="m">م</span></td></tr>
             <tr><td><span data-ar="مواقف تحت الأرض" data-en="Underground parking">مواقف تحت الأرض</span></td><td>12,500 <span data-ar="م²" data-en="m²">م²</span> · 322 <span data-ar="موقف" data-en="spots">موقف</span></td></tr>
-            <tr class="total"><td data-ar="التكييف والمصاعد" data-en="HVAC & Elevators">التكييف والمصاعد</td><td><span data-ar="VRV Trane · 4 مصاعد كوني" data-en="VRV Trane · 4 Kone elevators">VRV Trane · 4 مصاعد كوني</span></td></tr>
+            <tr class="total"><td data-ar="التكييف" data-en="HVAC">التكييف</td><td><span data-ar="نظام VRV Trane" data-en="VRV Trane system">نظام VRV Trane</span></td></tr>
           </tbody>
         </table>
       </div>
     </div>
-    <p class="mix-note reveal" data-ar="* المساحات بالمتر المربع وفق المخطط المعتمد لمشروع بالين بلو ميزون 2." data-en="* Areas in square metres per the approved Baleine Bleu Maison 2 scheme.">* المساحات بالمتر المربع وفق المخطط المعتمد لمشروع بالين بلو ميزون 2.</p>
+    <p class="mix-note reveal" data-ar="* المساحات بالمتر المربع وفق المخطط المعتمد لمشروع بالن بلو 2." data-en="* Areas in square metres per the approved Baleine Bleu 2 scheme.">* المساحات بالمتر المربع وفق المخطط المعتمد لمشروع بالن بلو 2.</p>
   </div>
 </section>
 
 <!-- ============ PLAN VIEWER ============ -->
 <section id="plan">
   <div class="wrap">
-    <div class="sec-head reveal" style="text-align:center;margin-inline:auto">
-      <span class="eyebrow" style="justify-content:center" data-ar="المخططات" data-en="Floor Plans">المخططات</span>
-      <h2 class="h2" style="margin:1.3rem auto;max-width:24ch" data-ar="المساقط كما اعتُمدت." data-en="The plans, as approved.">المساقط كما اعتُمدت.</h2>
-      <p class="lead" style="margin-inline:auto" data-ar="من مسقط القبو ومواقفه، إلى الدور الأرضي التجاري باستقباله ومعارضه، والطابق المكتبي النموذجي، وواجهات المبنى — لتقرأ البرج طابقاً طابقاً قبل زيارته." data-en="From the basement and its parking, to the commercial ground floor with reception and showrooms, the typical office floor, and the building elevations — read the tower floor by floor before you visit.">من مسقط القبو ومواقفه، إلى الدور الأرضي التجاري باستقباله ومعارضه، والطابق المكتبي النموذجي، وواجهات المبنى — لتقرأ البرج طابقاً طابقاً قبل زيارته.</p>
+    <div class="sec-head reveal">
+      <span class="eyebrow" data-ar="المخططات" data-en="Floor Plans">المخططات</span>
+      <h2 class="h2" data-ar="استعرض مخططات البرج" data-en="Explore the tower plans">استعرض مخططات البرج</h2>
+      <p class="lead" data-ar="من مسقط القبو ومواقفه، إلى الدور الأرضي باستقباله، والطابق المكتبي النموذجي، وواجهات المبنى — لتقرأ البرج طابقاً طابقاً قبل زيارته." data-en="From the basement and its parking, to the ground floor with reception, the typical office floor, and the building elevations — read the tower floor by floor before you visit.">من مسقط القبو ومواقفه، إلى الدور الأرضي باستقباله، والطابق المكتبي النموذجي، وواجهات المبنى — لتقرأ البرج طابقاً طابقاً قبل زيارته.</p>
     </div>
     <div class="plan-tabs reveal" id="planTabs"></div>
-    <div class="plan-view reveal"><img id="planImg" src="assets/plan-ground.jpg" alt="بالين بلو ميزون 2 — المسقط الأرضي" loading="lazy" decoding="async" /></div>
-    <div class="plan-cap reveal"><b id="planTitle">الدور الأرضي</b> · <span id="planMeta">استقبال ومعارض تجارية</span></div>
+    <div class="plan-frame reveal"><div class="plan-view"><img id="planImg" src="assets/plan-ground.jpg" alt="بالن بلو 2 — المسقط الأرضي" loading="lazy" decoding="async" /></div></div>
+    <div class="plan-cap reveal"><b id="planTitle">الدور الأرضي</b> · <span id="planMeta">استقبال · مواقف زوّار</span></div>
     <div class="plan-hint reveal">
       <span class="plan-swipe"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="15" height="15"><path d="M4 12h16M8 8l-4 4 4 4M16 8l4 4-4 4"/></svg><span data-ar="اسحب أفقياً لتصفّح المسقط" data-en="Swipe sideways to pan the plan">اسحب أفقياً لتصفّح المسقط</span></span>
       <a id="planFull" href="assets/plan-ground.jpg" target="_blank" rel="noopener" data-ar="افتح المخطط بالحجم الكامل ↗" data-en="Open full size ↗">افتح المخطط بالحجم الكامل ↗</a>
@@ -729,19 +763,19 @@ footer{border-top:1px solid var(--hair);padding-block:clamp(3rem,6vw,5rem) 2rem;
 <section id="services">
   <div class="wrap split">
     <div class="split-media reveal">
-      <img src="assets/lobby.jpg" alt="بهو مزدوج الارتفاع بالرخام في برج بالين بلو ميزون 2" loading="lazy" decoding="async" />
+      <img src="assets/lobby.jpg" alt="بهو مزدوج الارتفاع بالرخام في برج بالن بلو 2" loading="lazy" decoding="async" />
     </div>
     <div class="split-inner reveal">
       <span class="eyebrow" data-ar="مواصفات تعمل لصالح المستأجر" data-en="Built for the Tenant">مواصفات تعمل لصالح المستأجر</span>
-      <h2 class="h2" style="margin:1.3rem 0" data-ar="تصميمٌ يعمل لمصلحة من يشغله." data-en="Design that works for whoever occupies it.">تصميمٌ يعمل لمصلحة من يشغله.</h2>
-      <p class="lead" data-ar="من التكييف المركزي والمصاعد البانورامية إلى الإضاءة الطبيعية من الجهات الأربع — كل تفصيلٍ يخدم كفاءة المساحة وراحة المستخدم." data-en="From central air-conditioning and panoramic elevators to natural light on four sides — every detail serves space efficiency and occupant comfort.">من التكييف المركزي والمصاعد البانورامية إلى الإضاءة الطبيعية من الجهات الأربع — كل تفصيلٍ يخدم كفاءة المساحة وراحة المستخدم.</p>
+      <h2 class="h2" data-ar="تصميمٌ يعمل لمصلحة من يشغله." data-en="Design that works for whoever occupies it.">تصميمٌ يعمل لمصلحة من يشغله.</h2>
+      <p class="lead" data-ar="من التكييف المركزي إلى الإضاءة الطبيعية من الجهات الأربع — كل تفصيلٍ يخدم كفاءة المساحة وراحة المستخدم." data-en="From central air-conditioning to natural light on four sides — every detail serves space efficiency and occupant comfort.">من التكييف المركزي إلى الإضاءة الطبيعية من الجهات الأربع — كل تفصيلٍ يخدم كفاءة المساحة وراحة المستخدم.</p>
       <div class="svc-grid">
         <div class="svc"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h18M3 12h18M3 16h18"/><path d="M7 8v8M17 8v8"/></svg></span><span><b data-ar="تكييف VRV Trane" data-en="VRV Trane HVAC">تكييف VRV Trane</b><span data-ar="نظام مركزي عالي الكفاءة." data-en="High-efficiency central system.">نظام مركزي عالي الكفاءة.</span></span></div>
-        <div class="svc"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="6" y="3" width="12" height="18" rx="1.5"/><path d="M12 6l-2 2h4l-2-2M12 18l-2-2h4l-2 2"/></svg></span><span><b data-ar="4 مصاعد كوني" data-en="4 Kone Elevators">4 مصاعد كوني</b><span data-ar="مصاعد بانورامية سريعة." data-en="Fast, panoramic elevators.">مصاعد بانورامية سريعة.</span></span></div>
+        <div class="svc"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M10 17V7h3.5a2.8 2.8 0 0 1 0 5.6H10"/></svg></span><span><b data-ar="322 موقفاً" data-en="322 Parking Spots">322 موقفاً</b><span data-ar="في أدوار القبو الخمسة." data-en="Across the five basement levels.">في أدوار القبو الخمسة.</span></span></div>
         <div class="svc"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M5 19l1.5-1.5M17.5 6.5L19 5"/></svg></span><span><b data-ar="إضاءة طبيعية" data-en="Natural Light">إضاءة طبيعية</b><span data-ar="من الجهات الأربع، بلا أعمدة داخلية." data-en="Four sides, no internal columns.">من الجهات الأربع، بلا أعمدة داخلية.</span></span></div>
         <div class="svc"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3s6 6.4 6 10.2A6 6 0 0 1 6 13.2C6 9.4 12 3 12 3z"/></svg></span><span><b data-ar="أنظمة حريق متكاملة" data-en="Integrated Fire Systems">أنظمة حريق متكاملة</b><span data-ar="إنذار وإطفاء وطرد دخان." data-en="Alarm, fighting & smoke exhaust.">إنذار وإطفاء وطرد دخان.</span></span></div>
         <div class="svc"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3M7 9h4M7 13h7"/></svg></span><span><b data-ar="إدارة مبنى BMS" data-en="BMS + Public Address">إدارة مبنى BMS</b><span data-ar="تحكّم ذكي ونظام نداء آلي." data-en="Smart control & public address.">تحكّم ذكي ونظام نداء آلي.</span></span></div>
-        <div class="svc"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21h18M6 21V7l6-4 6 4v14"/><path d="M10 21v-5h4v5"/></svg></span><span><b data-ar="ارتداد خلفي 27 م" data-en="27 m Rear Setback">ارتداد خلفي 27 م</b><span data-ar="واجهة تجارية مباشرة على الشارع." data-en="Direct commercial street frontage.">واجهة تجارية مباشرة على الشارع.</span></span></div>
+        <div class="svc"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21h18M6 21V7l6-4 6 4v14"/><path d="M10 21v-5h4v5"/></svg></span><span><b data-ar="ارتداد خلفي 27 م" data-en="27 m Rear Setback">ارتداد خلفي 27 م</b><span data-ar="بعمق 27 م عن حد الأرض." data-en="27 m deep from the plot line.">بعمق 27 م عن حد الأرض.</span></span></div>
       </div>
     </div>
   </div>
@@ -751,9 +785,9 @@ footer{border-top:1px solid var(--hair);padding-block:clamp(3rem,6vw,5rem) 2rem;
 <section id="features">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="eyebrow" data-ar="لماذا بالين بلو ميزون 2" data-en="Why Baleine Bleu Maison 2">لماذا بالين بلو ميزون 2</span>
+      <span class="eyebrow" data-ar="لماذا بالن بلو 2" data-en="Why Baleine Bleu 2">لماذا بالن بلو 2</span>
       <h2 class="h2" data-ar="ستّة أسبابٍ تجعله قراراً، لا خياراً." data-en="Six reasons it's a decision, not an option.">ستّة أسبابٍ تجعله قراراً، لا خياراً.</h2>
-      <p class="feat2-sub" data-ar="من الموقع والواجهة إلى المرونة والتوقيت — كل ميزةٍ تضع استثمارك في قلب حركة العاصمة." data-en="From location and frontage to flexibility and timing — every advantage places your investment at the heart of the capital's movement.">من الموقع والواجهة إلى المرونة والتوقيت — كل ميزةٍ تضع استثمارك في قلب حركة العاصمة.</p>
+      <p class="feat2-sub" data-ar="من الموقع والمرونة إلى الهوية والتوقيت — كل ميزةٍ تضع استثمارك في قلب حركة العاصمة." data-en="From location and flexibility to identity and timing — every advantage places your investment at the heart of the capital's movement.">من الموقع والمرونة إلى الهوية والتوقيت — كل ميزةٍ تضع استثمارك في قلب حركة العاصمة.</p>
     </div>
     <div class="feat-grid2">
       <article class="feat-cell reveal">
@@ -763,18 +797,18 @@ footer{border-top:1px solid var(--hair);padding-block:clamp(3rem,6vw,5rem) 2rem;
       </article>
       <article class="feat-cell reveal">
         <span class="feat-num num-lat">02</span>
-        <div class="feat-top"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18M5 21V6l7-3 7 3v15"/><path d="M9 9h.01M15 9h.01M9 13h.01M15 13h.01M10 21v-4h4v4"/></svg></span><h3 data-ar="واجهة تجارية مباشرة" data-en="Direct Commercial Frontage">واجهة تجارية مباشرة</h3></div>
-        <p data-ar="خمسة وعشرون طابقاً تفتح على الشارع الرئيسي — لست بالقرب من الحركة، بل أنت جزءٌ منها." data-en="Twenty-five floors opening onto the main street — you're not near the movement, you're part of it.">خمسة وعشرون طابقاً تفتح على الشارع الرئيسي — لست بالقرب من الحركة، بل أنت جزءٌ منها.</p>
+        <div class="feat-top"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></span><h3 data-ar="مساحات مرنة" data-en="Flexible Spaces">مساحات مرنة</h3></div>
+        <p data-ar="مساحاتٌ على 25 طابقاً بلا أعمدة داخلية، تستوعب المكاتب والخدمات بحرية تامة." data-en="Spaces across 25 floors with no internal columns, flexibly housing offices and services.">مساحاتٌ على 25 طابقاً بلا أعمدة داخلية، تستوعب المكاتب والخدمات بحرية تامة.</p>
       </article>
       <article class="feat-cell reveal">
         <span class="feat-num num-lat">03</span>
-        <div class="feat-top"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></span><h3 data-ar="مساحة تأجيرية مرنة" data-en="Flexible Leasable Space">مساحة تأجيرية مرنة</h3></div>
-        <p data-ar="14,365 م² بلا أعمدة داخلية، تستوعب التجزئة والمكاتب والخدمات بحرية تامة." data-en="14,365 m² with no internal columns — flexibly housing retail, offices and services.">14,365 م² بلا أعمدة داخلية، تستوعب التجزئة والمكاتب والخدمات بحرية تامة.</p>
+        <div class="feat-top"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6M9 11h6"/></svg></span><h3 data-ar="تسليم على الهيكل" data-en="Delivered as Shell">تسليم على الهيكل</h3></div>
+        <p data-ar="تُسلَّم الأدوار المكتبية قبل التشطيب لتصمّم مساحتك بهويتك، بينما يُسلَّم الدور الأرضي والجراج مشطّبَين." data-en="The office floors are delivered pre-fit-out so you design your space with your own identity, while the ground floor and garage are delivered finished.">تُسلَّم الأدوار المكتبية قبل التشطيب لتصمّم مساحتك بهويتك، بينما يُسلَّم الدور الأرضي والجراج مشطّبَين.</p>
       </article>
       <article class="feat-cell reveal">
         <span class="feat-num num-lat">04</span>
-        <div class="feat-top"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg></span><h3 data-ar="جاهزٌ ومكتمل" data-en="Ready & Complete">جاهزٌ ومكتمل</h3></div>
-        <p data-ar="برجٌ منجز بمواصفاتٍ تشغيلية كاملة، ورخامٍ وتشطيباتٍ راقية، ومواقف وفيرة." data-en="A finished tower with complete operational specs, marble and refined finishes, and ample parking.">برجٌ منجز بمواصفاتٍ تشغيلية كاملة، ورخامٍ وتشطيباتٍ راقية، ومواقف وفيرة.</p>
+        <div class="feat-top"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M10 17V7h3.5a2.8 2.8 0 0 1 0 5.6H10"/></svg></span><h3 data-ar="مواقف تحت الأرض" data-en="Underground Parking">مواقف تحت الأرض</h3></div>
+        <p data-ar="322 موقفاً في أدوار القبو الخمسة، لتصل إلى مكتبك بسهولة كل يوم." data-en="322 spots across the five basement levels, so reaching your office is easy every day.">322 موقفاً في أدوار القبو الخمسة، لتصل إلى مكتبك بسهولة كل يوم.</p>
       </article>
       <article class="feat-cell reveal">
         <span class="feat-num num-lat">05</span>
@@ -783,8 +817,8 @@ footer{border-top:1px solid var(--hair);padding-block:clamp(3rem,6vw,5rem) 2rem;
       </article>
       <article class="feat-cell reveal">
         <span class="feat-num num-lat">06</span>
-        <div class="feat-top"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 17l6-6 4 4 8-8"/><path d="M21 7v5h-5"/></svg></span><h3 data-ar="توقيت رؤية 2030" data-en="Vision 2030 Timing">توقيت رؤية 2030</h3></div>
-        <p data-ar="في قلب سوقٍ تجاري هو الأنشط والأسرع نموّاً في المنطقة." data-en="At the heart of the region's most active and fastest-growing commercial market.">في قلب سوقٍ تجاري هو الأنشط والأسرع نموّاً في المنطقة.</p>
+        <div class="feat-top"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3l8 3v6c0 4.5-3.2 8-8 9-4.8-1-8-4.5-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg></span><h3 data-ar="هوية وتحكم كامل" data-en="Identity & Full Control">هوية وتحكم كامل</h3></div>
+        <p data-ar="تأجير البرج بالكامل يبني صورة ذهنية أقوى أمام المستثمرين والشركاء، ويمنحك تحكماً كاملاً في سياساتك التشغيلية." data-en="Leasing the whole tower builds a stronger image in front of investors and partners, and gives you full control over your operating policies.">تأجير البرج بالكامل يبني صورة ذهنية أقوى أمام المستثمرين والشركاء، ويمنحك تحكماً كاملاً في سياساتك التشغيلية.</p>
       </article>
     </div>
   </div>
@@ -796,7 +830,7 @@ footer{border-top:1px solid var(--hair);padding-block:clamp(3rem,6vw,5rem) 2rem;
     <div class="sec-head reveal">
       <span class="eyebrow" data-ar="موقعٌ على العصب المالي" data-en="A Financial-Corridor Location">موقعٌ على العصب المالي</span>
       <h2 class="h2" data-ar="على الشريط التجاري، في قلب الحركة." data-en="On the commercial strip, at the heart of the movement.">على الشريط التجاري، في قلب الحركة.</h2>
-      <p class="lead" data-ar="يقع بالين بلو ميزون 2 في حي الصحافة على الشريط التجاري المحصور بين طريق الملك فهد وشارع العليا شمالاً وجنوباً، محاطاً بأهم المقارّ والمعالم المالية في الرياض." data-en="Baleine Bleu Maison 2 sits in Al Sahafah on the commercial strip between King Fahd Road and Olaya Street, north to south — surrounded by Riyadh's foremost corporate and financial landmarks.">يقع بالين بلو ميزون 2 في حي الصحافة على الشريط التجاري المحصور بين طريق الملك فهد وشارع العليا شمالاً وجنوباً، محاطاً بأهم المقارّ والمعالم المالية في الرياض.</p>
+      <p class="lead" data-ar="يقع بالن بلو 2 في حي الصحافة على الشريط التجاري المحصور بين طريق الملك فهد وشارع العليا شمالاً وجنوباً، محاطاً بأهم المقارّ والمعالم المالية في الرياض." data-en="Baleine Bleu 2 sits in Al Sahafah on the commercial strip between King Fahd Road and Olaya Street, north to south — surrounded by Riyadh's foremost corporate and financial landmarks.">يقع بالن بلو 2 في حي الصحافة على الشريط التجاري المحصور بين طريق الملك فهد وشارع العليا شمالاً وجنوباً، محاطاً بأهم المقارّ والمعالم المالية في الرياض.</p>
       <div class="loc-chips">
         <span class="loc-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 20l4-16M20 20l-4-16M10 20V4M14 20V4"/></svg><span data-ar="طريق الملك فهد وشارع العليا" data-en="King Fahd Rd & Olaya St">طريق الملك فهد وشارع العليا</span></span>
         <span class="loc-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 21h18M5 21V8l7-4 7 4v13"/></svg><span data-ar="جوار كافد وبرج المملكة" data-en="By KAFD & Kingdom Centre">جوار كافد وبرج المملكة</span></span>
@@ -804,7 +838,7 @@ footer{border-top:1px solid var(--hair);padding-block:clamp(3rem,6vw,5rem) 2rem;
       </div>
     </div>
     <div class="loc-grid">
-      <div class="loc-map reveal"><img src="assets/map.jpg" alt="موقع بالين بلو ميزون 2 في حي الصحافة بالرياض" loading="lazy" decoding="async" /></div>
+      <div class="loc-map reveal"><img src="assets/map.jpg" alt="موقع بالن بلو 2 في حي الصحافة بالرياض" loading="lazy" decoding="async" /></div>
       <ul class="lm-list reveal">
         <li><span class="lm-name"><span class="dot"></span><span data-ar="مترو الرياض" data-en="Riyadh Metro">مترو الرياض</span></span><span class="lm-time num-lat"><span data-ar="5 دقائق" data-en="5 min">5 دقائق</span></span></li>
         <li><span class="lm-name"><span class="dot"></span><span data-ar="برج المملكة" data-en="Kingdom Centre">برج المملكة</span></span><span class="lm-time num-lat"><span data-ar="10 دقائق" data-en="10 min">10 دقائق</span></span></li>
@@ -826,16 +860,20 @@ footer{border-top:1px solid var(--hair);padding-block:clamp(3rem,6vw,5rem) 2rem;
     <div class="gal-wrap reveal">
       <div class="gal-slider" id="galSlider">
         <div class="gal-track">
-          <div class="gal-slide"><img src="assets/hero.jpg" alt="واجهة برج بالين بلو ميزون 2" loading="lazy" decoding="async" draggable="false" /></div>
-          <div class="gal-slide"><img src="assets/tower-2.jpg" alt="البرج من الجانب على الشريط التجاري" loading="lazy" decoding="async" draggable="false" /></div>
+          <div class="gal-slide"><img src="assets/hero.jpg" alt="واجهة البرج على الشارع الرئيسي" loading="lazy" decoding="async" draggable="false" /></div>
+          <div class="gal-slide"><img src="assets/tower-2.jpg" alt="المدخل وواجهة البرج من الجانب" loading="lazy" decoding="async" draggable="false" /></div>
+          <div class="gal-slide"><img src="assets/tower-1.jpg" alt="البرج كاملاً من الأمام" loading="lazy" decoding="async" draggable="false" /></div>
+          <div class="gal-slide"><img src="assets/plaza.jpg" alt="ساحة البرج وأفق حي الصحافة" loading="lazy" decoding="async" draggable="false" /></div>
           <div class="gal-slide"><img src="assets/lobby.jpg" alt="بهو مزدوج الارتفاع بالرخام" loading="lazy" decoding="async" draggable="false" /></div>
-          <div class="gal-slide"><img src="assets/interior.jpg" alt="طابق مكتبي مفتوح بأرضية رخامية" loading="lazy" decoding="async" draggable="false" /></div>
+          <div class="gal-slide"><img src="assets/interior.jpg" alt="قاعة الدور الأرضي بأرضية رخامية" loading="lazy" decoding="async" draggable="false" /></div>
           <div class="gal-slide"><img src="assets/elevator.jpg" alt="ردهة المصاعد بالرخام" loading="lazy" decoding="async" draggable="false" /></div>
           <div class="gal-slide"><img src="assets/rooftop-1.jpg" alt="تراس البرج العلوي بالأعمدة" loading="lazy" decoding="async" draggable="false" /></div>
           <div class="gal-slide"><img src="assets/rooftop-2.jpg" alt="رواق زجاجي في الطابق العلوي" loading="lazy" decoding="async" draggable="false" /></div>
-          <div class="gal-slide"><img src="assets/plaza.jpg" alt="ساحة البرج وأفق حي الصحافة" loading="lazy" decoding="async" draggable="false" /></div>
-          <div class="gal-slide"><img src="assets/tower-1.jpg" alt="البرج كاملاً من الأمام" loading="lazy" decoding="async" draggable="false" /></div>
           <div class="gal-slide"><img src="assets/corridor.jpg" alt="ممر علوي بإطلالة على المدينة" loading="lazy" decoding="async" draggable="false" /></div>
+          <div class="gal-slide"><img src="assets/garage-lobby.jpg" alt="ردهة الدخول إلى طابق المواقف" loading="lazy" decoding="async" draggable="false" /></div>
+          <div class="gal-slide"><img src="assets/garage-1.jpg" alt="مواقف القبو المرقّمة" loading="lazy" decoding="async" draggable="false" /></div>
+          <div class="gal-slide"><img src="assets/garage-2.jpg" alt="طابق المواقف تحت الأرض" loading="lazy" decoding="async" draggable="false" /></div>
+          <div class="gal-slide"><img src="assets/control-room.jpg" alt="غرفة التحكم وأنظمة الحريق" loading="lazy" decoding="async" draggable="false" /></div>
         </div>
       </div>
       <button class="gal-nav prev" id="galPrev" type="button" aria-label="السابق"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M15 5l-7 7 7 7"/></svg></button>
@@ -851,15 +889,10 @@ footer{border-top:1px solid var(--hair);padding-block:clamp(3rem,6vw,5rem) 2rem;
 <!-- ============ CONTACT ============ -->
 <section id="contact" class="contact">
   <div class="wrap">
-    <div class="sec-head contact-aside reveal" style="text-align:center;margin-inline:auto">
-      <span class="eyebrow" style="justify-content:center" data-ar="ابدأ هنا" data-en="Begin Here">ابدأ هنا</span>
-      <h2 class="h2" style="margin:1.3rem auto;max-width:24ch" data-ar="سجّل اهتمامك في بالين بلو ميزون 2." data-en="Register your interest in Baleine Bleu Maison 2.">سجّل اهتمامك في بالين بلو ميزون 2.</h2>
-      <p class="lead" style="margin-inline:auto" data-ar="اترك تفاصيلك وسيتواصل معك فريق نفوذ للاستثمار العقاري — المسوّق الحصري للبرج — لعرض المساحات المتاحة وشروط التأجير وترتيب زيارةٍ للموقع." data-en="Leave your details and the team at Nofodh Real Estate Investment — the tower's exclusive marketer — will walk you through available spaces, leasing terms and arrange a site visit.">اترك تفاصيلك وسيتواصل معك فريق نفوذ للاستثمار العقاري — المسوّق الحصري للبرج — لعرض المساحات المتاحة وشروط التأجير وترتيب زيارةٍ للموقع.</p>
-      <div class="contact-lines">
-        <a href="tel:920029555" dir="ltr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 005 5L15 13l5 2v4a1 1 0 01-1 1A16 16 0 014 5a1 1 0 011-1z"/></svg>920029555</a>
-        <a href="mailto:info@nofodh.sa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5L12 13l8.5-6.5"/></svg>info@nofodh.sa</a>
-        <a href="https://nofodh.sa" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.7 3.8 9S14.5 18.4 12 21c-2.5-2.6-3.8-5.7-3.8-9S9.5 5.6 12 3z"/></svg>www.nofodh.sa</a>
-      </div>
+    <div class="sec-head contact-aside reveal">
+      <span class="eyebrow" data-ar="ابدأ هنا" data-en="Begin Here">ابدأ هنا</span>
+      <h2 class="h2" data-ar="سجّل اهتمامك في بالن بلو 2." data-en="Register your interest in Baleine Bleu 2.">سجّل اهتمامك في بالن بلو 2.</h2>
+      <p class="lead" data-ar="اترك تفاصيلك وسيتواصل معك فريق نفوذ للاستثمار العقاري — المسوّق الحصري للبرج — لترتيب زيارةٍ للموقع." data-en="Leave your details and the team at Nofodh Real Estate Investment — the tower's exclusive marketer — will arrange a site visit.">اترك تفاصيلك وسيتواصل معك فريق نفوذ للاستثمار العقاري — المسوّق الحصري للبرج — لترتيب زيارةٍ للموقع.</p>
     </div>
 
     <div class="form-shell reveal">
@@ -878,34 +911,21 @@ footer{border-top:1px solid var(--hair);padding-block:clamp(3rem,6vw,5rem) 2rem;
             <input type="email" name="email" required data-ar-ph="name@email.com" data-en-ph="name@email.com" placeholder="name@email.com" />
           </div>
           <div class="field">
-            <label data-ar="المدينة" data-en="City">المدينة</label>
-            <input type="text" name="city" data-ar-ph="الرياض" data-en-ph="Riyadh" placeholder="الرياض" />
-          </div>
-          <div class="field">
-            <label data-ar="نوع المساحة" data-en="Space type">نوع المساحة</label>
-            <select name="space">
-              <option value="" data-ar="اختر النوع" data-en="Select type">اختر النوع</option>
-              <option value="retail" data-ar="معارض أرضية" data-en="Ground-floor retail">معارض أرضية</option>
-              <option value="office" data-ar="طوابق مكتبية" data-en="Office floors">طوابق مكتبية</option>
-              <option value="full-floor" data-ar="طابق كامل" data-en="Full floor">طابق كامل</option>
-              <option value="whole" data-ar="البرج بالكامل" data-en="Whole tower">البرج بالكامل</option>
-            </select>
-          </div>
-          <div class="field">
             <label data-ar="الغرض" data-en="Purpose">الغرض</label>
             <select name="purpose">
               <option value="" data-ar="اختر الغرض" data-en="Select purpose">اختر الغرض</option>
-              <option value="lease" data-ar="تأجير للاستخدام" data-en="Lease to occupy">تأجير للاستخدام</option>
+              <option value="hq" data-ar="مقر رئيسي للشركة" data-en="Company headquarters">مقر رئيسي للشركة</option>
+              <option value="branch" data-ar="فرع / مكتب إضافي" data-en="Branch / additional office">فرع / مكتب إضافي</option>
               <option value="invest" data-ar="استثمار" data-en="Investment">استثمار</option>
             </select>
           </div>
           <div class="field full">
             <label data-ar="رسالتك (اختياري)" data-en="Message (optional)">رسالتك (اختياري)</label>
-            <textarea name="message" data-ar-ph="أخبرنا بما تبحث عنه — المساحة، الدور، أو موعد الزيارة..." data-en-ph="Tell us what you're looking for — area, floor, or a visit time..." placeholder="أخبرنا بما تبحث عنه — المساحة، الدور، أو موعد الزيارة..."></textarea>
+            <textarea name="message" data-ar-ph="أخبرنا بنشاطك أو بما تبحث عنه، أو اقترح موعداً للزيارة..." data-en-ph="Tell us about your business or what you're looking for, or suggest a visit time..." placeholder="أخبرنا بنشاطك أو بما تبحث عنه، أو اقترح موعداً للزيارة..."></textarea>
           </div>
         </div>
         <div class="form-foot">
-          <p class="form-note" data-ar="بياناتك سرّية ولن تُستخدم إلا للتواصل بخصوص برج بالين بلو ميزون 2." data-en="Your details are confidential and used only to contact you about Baleine Bleu Maison 2.">بياناتك سرّية ولن تُستخدم إلا للتواصل بخصوص برج بالين بلو ميزون 2.</p>
+          <p class="form-note" data-ar="بياناتك سرّية ولن تُستخدم إلا للتواصل بخصوص برج بالن بلو 2." data-en="Your details are confidential and used only to contact you about Baleine Bleu 2.">بياناتك سرّية ولن تُستخدم إلا للتواصل بخصوص برج بالن بلو 2.</p>
           <button type="submit" class="btn btn-primary" data-ar="أرسل الطلب" data-en="Send request">أرسل الطلب <span class="arr">→</span></button>
         </div>
       </form>
@@ -928,48 +948,47 @@ footer{border-top:1px solid var(--hair);padding-block:clamp(3rem,6vw,5rem) 2rem;
     <button class="modal-close" data-close aria-label="Close">&#10005;</button>
     <div class="modal-head">
       <span class="eyebrow" data-ar="سجّل اهتمامك" data-en="Register interest">سجّل اهتمامك</span>
-      <h3 id="regModalTitle" data-ar="احجز مساحتك في بالين بلو ميزون 2" data-en="Reserve your space at Baleine Bleu Maison 2">احجز مساحتك في بالين بلو ميزون 2</h3>
-      <p data-ar="اترك تفاصيلك وسيتواصل معك فريق نفوذ للاستثمار العقاري لعرض المساحات المتاحة وترتيب زيارة للموقع." data-en="Leave your details and the Nofodh team will present available spaces and arrange a site visit.">اترك تفاصيلك وسيتواصل معك فريق نفوذ للاستثمار العقاري لعرض المساحات المتاحة وترتيب زيارة للموقع.</p>
+      <h3 id="regModalTitle" data-ar="سجّل اهتمامك في بالن بلو 2" data-en="Register your interest in Baleine Bleu 2">سجّل اهتمامك في بالن بلو 2</h3>
+      <p data-ar="اترك تفاصيلك وسيتواصل معك فريق نفوذ للاستثمار العقاري لترتيب زيارة للموقع." data-en="Leave your details and the Nofodh team will arrange a site visit.">اترك تفاصيلك وسيتواصل معك فريق نفوذ للاستثمار العقاري لترتيب زيارة للموقع.</p>
     </div>
     <form id="modalForm" novalidate>
-      <div class="form-grid">
-        <div class="field">
-          <label data-ar="الاسم الكامل" data-en="Full name">الاسم الكامل</label>
-          <input type="text" name="name" required data-ar-ph="اكتب اسمك" data-en-ph="Your name" placeholder="اكتب اسمك" />
+        <div class="form-grid">
+          <div class="field">
+            <label data-ar="الاسم الكامل" data-en="Full name">الاسم الكامل</label>
+            <input type="text" name="name" required data-ar-ph="اكتب اسمك" data-en-ph="Your name" placeholder="اكتب اسمك" />
+          </div>
+          <div class="field">
+            <label data-ar="رقم الهاتف" data-en="Phone">رقم الهاتف</label>
+            <input type="tel" name="phone" required data-ar-ph="+966" data-en-ph="+966" placeholder="+966" />
+          </div>
+          <div class="field">
+            <label data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</label>
+            <input type="email" name="email" required data-ar-ph="name@email.com" data-en-ph="name@email.com" placeholder="name@email.com" />
+          </div>
+          <div class="field">
+            <label data-ar="الغرض" data-en="Purpose">الغرض</label>
+            <select name="purpose">
+              <option value="" data-ar="اختر الغرض" data-en="Select purpose">اختر الغرض</option>
+              <option value="hq" data-ar="مقر رئيسي للشركة" data-en="Company headquarters">مقر رئيسي للشركة</option>
+              <option value="branch" data-ar="فرع / مكتب إضافي" data-en="Branch / additional office">فرع / مكتب إضافي</option>
+              <option value="invest" data-ar="استثمار" data-en="Investment">استثمار</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label data-ar="رسالتك (اختياري)" data-en="Message (optional)">رسالتك (اختياري)</label>
+            <textarea name="message" data-ar-ph="أخبرنا بنشاطك أو بما تبحث عنه، أو اقترح موعداً للزيارة..." data-en-ph="Tell us about your business or what you're looking for, or suggest a visit time..." placeholder="أخبرنا بنشاطك أو بما تبحث عنه، أو اقترح موعداً للزيارة..."></textarea>
+          </div>
         </div>
-        <div class="field">
-          <label data-ar="رقم الهاتف" data-en="Phone">رقم الهاتف</label>
-          <input type="tel" name="phone" required data-ar-ph="+966" data-en-ph="+966" placeholder="+966" />
-        </div>
-        <div class="field">
-          <label data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</label>
-          <input type="email" name="email" required data-ar-ph="name@email.com" data-en-ph="name@email.com" placeholder="name@email.com" />
-        </div>
-        <div class="field">
-          <label data-ar="نوع المساحة" data-en="Space type">نوع المساحة</label>
-          <select name="space">
-            <option value="" data-ar="اختر النوع" data-en="Select type">اختر النوع</option>
-            <option value="retail" data-ar="معارض أرضية" data-en="Ground-floor retail">معارض أرضية</option>
-            <option value="office" data-ar="طوابق مكتبية" data-en="Office floors">طوابق مكتبية</option>
-            <option value="full-floor" data-ar="طابق كامل" data-en="Full floor">طابق كامل</option>
-            <option value="whole" data-ar="البرج بالكامل" data-en="Whole tower">البرج بالكامل</option>
-          </select>
-        </div>
-        <div class="field full">
-          <label data-ar="رسالتك (اختياري)" data-en="Message (optional)">رسالتك (اختياري)</label>
-          <textarea name="message" data-ar-ph="أخبرنا بما تبحث عنه..." data-en-ph="Tell us what you're looking for..." placeholder="أخبرنا بما تبحث عنه..."></textarea>
-        </div>
-      </div>
       <div class="form-foot">
-        <p class="form-note" data-ar="بياناتك سرّية ولن تُستخدم إلا للتواصل بخصوص برج بالين بلو ميزون 2." data-en="Your details are confidential and used only to contact you about Baleine Bleu Maison 2.">بياناتك سرّية ولن تُستخدم إلا للتواصل بخصوص برج بالين بلو ميزون 2.</p>
+        <p class="form-note" data-ar="بياناتك سرّية ولن تُستخدم إلا للتواصل بخصوص برج بالن بلو 2." data-en="Your details are confidential and used only to contact you about Baleine Bleu 2.">بياناتك سرّية ولن تُستخدم إلا للتواصل بخصوص برج بالن بلو 2.</p>
         <button type="submit" class="btn btn-primary" data-ar="أرسل الطلب" data-en="Send request">أرسل الطلب <span class="arr">→</span></button>
       </div>
     </form>
     <div class="form-success" id="modalSuccess">
-      <div class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4L19 6"/></svg></div>
-      <h3 data-ar="شكرًا لاهتمامك" data-en="Thank you">شكرًا لاهتمامك</h3>
-      <p data-ar="تم استلام طلبك. سيتواصل معك فريق نفوذ للاستثمار العقاري قريبًا." data-en="Your request has been received. The Nofodh team will be in touch shortly.">تم استلام طلبك. سيتواصل معك فريق نفوذ للاستثمار العقاري قريبًا.</p>
-    </div>
+        <div class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4L19 6"/></svg></div>
+        <h3 data-ar="شكرًا لاهتمامك" data-en="Thank you">شكرًا لاهتمامك</h3>
+        <p data-ar="تم استلام طلبك. سيتواصل معك فريق نفوذ للاستثمار العقاري قريبًا." data-en="Your request has been received. The Nofodh team will be in touch shortly.">تم استلام طلبك. سيتواصل معك فريق نفوذ للاستثمار العقاري قريبًا.</p>
+      </div>
   </div>
 </div>
 
@@ -986,8 +1005,8 @@ footer{border-top:1px solid var(--hair);padding-block:clamp(3rem,6vw,5rem) 2rem;
   <div class="wrap">
     <div class="foot-grid">
       <div class="foot-brand">
-        <a href="#top" class="foot-logo"><img id="footLogo" src="assets/logo-white.png" alt="بالين بلو ميزون 2" /></a>
-        <p data-ar="برجٌ تجاري من 25 طابقاً في حي الصحافة بالرياض — 14,365 م² مساحة قابلة للتأجير و322 موقفاً، بواجهةٍ مباشرة على العصب المالي للعاصمة." data-en="A 25-floor commercial tower in Al Sahafah, Riyadh — 14,365 m² of leasable space and 322 parking spots, with a direct frontage on the capital's financial nerve.">برجٌ تجاري من 25 طابقاً في حي الصحافة بالرياض — 14,365 م² مساحة قابلة للتأجير و322 موقفاً، بواجهةٍ مباشرة على العصب المالي للعاصمة.</p>
+        <a href="#top" class="foot-logo"><img id="footLogo" src="assets/logo-white.png" alt="بالن بلو 2" /></a>
+        <p data-ar="برجٌ تجاري من 25 طابقاً في حي الصحافة بالرياض، بـ322 موقفاً تحت الأرض، في قلب العصب المالي للعاصمة." data-en="A 25-floor commercial tower in Al Sahafah, Riyadh, with 322 underground parking spots, at the heart of the capital's financial nerve.">برجٌ تجاري من 25 طابقاً في حي الصحافة بالرياض، بـ322 موقفاً تحت الأرض، في قلب العصب المالي للعاصمة.</p>
         <div class="socials">
           <a href="https://x.com/Nofodh_ksa" target="_blank" rel="noopener" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.3 8.3L23 22h-6.6l-5.2-6.8L5.3 22H2l7.8-8.9L1.6 2h6.8l4.7 6.2L18.9 2zm-2.3 18h1.8L7.5 3.8H5.6L16.6 20z"/></svg></a>
           <a href="https://wa.me/966920029555" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 11.5a8.5 8.5 0 01-12.5 7.5L3 21l2-5.5A8.5 8.5 0 1121 11.5z"/><path d="M8.5 9.5c0 3 2 5 5 5"/></svg></a>
@@ -1019,7 +1038,7 @@ footer{border-top:1px solid var(--hair);padding-block:clamp(3rem,6vw,5rem) 2rem;
       </div>
     </div>
     <div class="foot-bottom">
-      <p data-ar="© 2026 بالين بلو ميزون 2. جميع الحقوق محفوظة." data-en="© 2026 Baleine Bleu Maison 2. All rights reserved.">© 2026 بالين بلو ميزون 2. جميع الحقوق محفوظة.</p>
+      <p data-ar="© 2026 بالن بلو 2. جميع الحقوق محفوظة." data-en="© 2026 Baleine Bleu 2. All rights reserved.">© 2026 بالن بلو 2. جميع الحقوق محفوظة.</p>
       <p data-ar="ليس قريباً من الحركة، بل جزءٌ منها" data-en="Not near the movement — part of it">ليس قريباً من الحركة، بل جزءٌ منها</p>
     </div>
   </div>
@@ -1054,6 +1073,7 @@ footer{border-top:1px solid var(--hair);padding-block:clamp(3rem,6vw,5rem) 2rem;
     });
     updateLogos();
     refreshPlanCaption();
+    fitH2();
     try{localStorage.setItem('bb2-lang',lang);}catch(e){}
   }
   function updateLogos(){
@@ -1072,13 +1092,13 @@ footer{border-top:1px solid var(--hair);padding-block:clamp(3rem,6vw,5rem) 2rem;
   function applyTheme(theme){
     html.setAttribute('data-theme',theme);
     updateLogos();
-    try{localStorage.setItem('bb2-theme',theme);}catch(e){}
+    try{localStorage.setItem('bb2-theme2',theme);}catch(e){}
   }
   document.getElementById('themeBtn').addEventListener('click',function(){
     applyTheme(html.getAttribute('data-theme')==='light'?'dark':'light');
   });
-  /* dark is the default; only a stored 'light' flips it */
-  try{var st=localStorage.getItem('bb2-theme'); if(st==='light') applyTheme('light');}catch(e){}
+  /* light is the default; only a stored 'dark' flips it */
+  try{var st=localStorage.getItem('bb2-theme2'); if(st==='dark') applyTheme('dark');}catch(e){}
   try{var saved=localStorage.getItem('bb2-lang'); if(saved&&saved!=='ar') applyLang(saved);}catch(e){}
   updateLogos();
 
@@ -1193,7 +1213,7 @@ footer{border-top:1px solid var(--hair);padding-block:clamp(3rem,6vw,5rem) 2rem;
   var plans=[
     {key:'ground', img:'assets/plan-ground.jpg',
       t:{ar:'الدور الأرضي',en:'Ground Floor'},
-      m:{ar:'استقبال ومعارض تجارية · مواقف زوّار',en:'Reception & commercial showrooms · visitor parking'}},
+      m:{ar:'استقبال · مواقف زوّار',en:'Reception · visitor parking'}},
     {key:'basement', img:'assets/plan-basement.jpg',
       t:{ar:'القبو والمواقف',en:'Basement & Parking'},
       m:{ar:'أدوار المواقف تحت الأرض · 322 موقفاً',en:'Underground parking levels · 322 spots'}},
@@ -1236,6 +1256,80 @@ footer{border-top:1px solid var(--hair);padding-block:clamp(3rem,6vw,5rem) 2rem;
     });
   }
   refreshPlanCaption();
+
+  /* ---------- H2 FIT (single-line headings) ---------- */
+  function fitH2(){
+    document.querySelectorAll('.h2').forEach(function(el){
+      el.style.fontSize='';
+      var w=el.clientWidth, s=el.scrollWidth;
+      if(w>0 && s>w+1){ el.style.fontSize=(parseFloat(getComputedStyle(el).fontSize)*w/s*0.97)+'px'; }
+    });
+  }
+  window.addEventListener('resize',fitH2);
+  window.addEventListener('load',fitH2);
+  if(document.fonts&&document.fonts.ready) document.fonts.ready.then(fitH2);
+  fitH2();
+
+  /* ---------- LIGHTBOX + ZOOM BUTTONS ---------- */
+  var ZOOM_ICON='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>';
+  document.querySelectorAll('.plan-frame,.split-media,.loc-map,.gal-slide').forEach(function(c){
+    var b=document.createElement('button');
+    b.type='button'; b.className='zoom-btn'; b.setAttribute('aria-label','تكبير الصورة'); b.innerHTML=ZOOM_ICON;
+    c.appendChild(b);
+  });
+  var lb=document.createElement('div');
+  lb.className='lb'; lb.setAttribute('aria-hidden','true');
+  lb.innerHTML='<div class="lb-bg" data-lb-close></div><button class="lb-x" type="button" data-lb-close aria-label="Close">&#10005;</button><button class="lb-nav lb-prev" type="button" aria-label="Previous">&#8249;</button><button class="lb-nav lb-next" type="button" aria-label="Next">&#8250;</button><div class="lb-stage"><img alt="" draggable="false"></div><div class="lb-cap"></div>';
+  document.body.appendChild(lb);
+  var lbImg=lb.querySelector('img'), lbCap=lb.querySelector('.lb-cap'), lbStage=lb.querySelector('.lb-stage');
+  var lbPrev=lb.querySelector('.lb-prev'), lbNext=lb.querySelector('.lb-next');
+  var lbItems=[], lbIdx=0, lbSwiped=false;
+  function lbShow(){
+    var it=lbItems[lbIdx];
+    lb.classList.remove('zoomed'); lbStage.scrollTop=0; lbStage.scrollLeft=0;
+    lbImg.src=it.src; lbImg.alt=it.alt||''; lbCap.textContent=it.alt||'';
+    var multi=lbItems.length>1; lbPrev.style.display=lbNext.style.display=multi?'':'none';
+  }
+  function lbOpen(list,i){
+    lbItems=list; lbIdx=i; lbShow();
+    lb.classList.add('open'); lb.setAttribute('aria-hidden','false');
+    document.documentElement.style.overflow='hidden';
+  }
+  function lbClose(){
+    lb.classList.remove('open','zoomed'); lb.setAttribute('aria-hidden','true');
+    document.documentElement.style.overflow='';
+  }
+  function lbStep(d){ lbIdx=(lbIdx+d+lbItems.length)%lbItems.length; lbShow(); }
+  lb.querySelectorAll('[data-lb-close]').forEach(function(el){ el.addEventListener('click',lbClose); });
+  lbPrev.addEventListener('click',function(){ lbStep(-1); });
+  lbNext.addEventListener('click',function(){ lbStep(1); });
+  lbImg.addEventListener('click',function(){ if(lbSwiped){ lbSwiped=false; return; } lb.classList.toggle('zoomed'); });
+  var lbX0=null;
+  lbStage.addEventListener('pointerdown',function(e){ lbX0=e.clientX; lbSwiped=false; });
+  lbStage.addEventListener('pointerup',function(e){
+    if(lbX0===null||lb.classList.contains('zoomed')) { lbX0=null; return; }
+    var dx=e.clientX-lbX0; lbX0=null;
+    if(Math.abs(dx)>50 && lbItems.length>1){ lbSwiped=true; lbStep(dx<0?1:-1); }
+  });
+  document.addEventListener('keydown',function(e){
+    if(!lb.classList.contains('open')) return;
+    if(e.key==='Escape') lbClose();
+    else if(e.key==='ArrowLeft') lbStep(-1);
+    else if(e.key==='ArrowRight') lbStep(1);
+  });
+  document.addEventListener('click',function(e){
+    var c=e.target.closest('.plan-frame,.split-media,.loc-map,.gal-slide');
+    if(!c) return;
+    if(c.classList.contains('plan-frame')){
+      lbOpen(plans.map(function(p){return {src:p.img,alt:p.t[LANG]};}),activePlan); return;
+    }
+    if(c.classList.contains('gal-slide')){
+      var all=Array.prototype.slice.call(document.querySelectorAll('.gal-slide'));
+      lbOpen(all.map(function(s){var im=s.querySelector('img');return {src:im.getAttribute('src'),alt:im.alt};}),all.indexOf(c)); return;
+    }
+    var im=c.querySelector('img');
+    lbOpen([{src:im.getAttribute('src'),alt:im.alt}],0);
+  });
 })();
 </script>
 </body>

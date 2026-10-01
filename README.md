@@ -1,8 +1,8 @@
-# Baleine Bleu Maison 2 · بالين بلو ميزون 2
+# بالن بلو 2 · Baleine Bleu 2
 
-Bilingual (AR default / EN) single-page landing site for **Baleine Bleu Maison 2** — a 25-floor commercial tower on the financial corridor in Al Sahafah, Riyadh. Exclusive marketer: Nofodh Real Estate Investment. Owner: Mosa Al Mosa Holding Group.
+Bilingual (AR default / EN) single-page landing site for **Baleine Bleu 2** — a 25-floor commercial tower on the financial corridor in Al Sahafah, Riyadh. Exclusive marketer: Nofodh Real Estate Investment. Owner: Mosa Al Mosa Holding Group.
 
-Self-contained `index.html` (inline CSS + JS), royal-navy `#153487` + gold identity, dark default with a light theme, real tower photography and approved floor plans.
+Self-contained `index.html` (inline CSS + JS), royal-navy `#153487` + gold identity, **light theme by default** (dark available from the header toggle), real tower photography, approved floor plans, and a lightbox with zoom buttons on every content image.
 
 ## Local preview
 ```bash
